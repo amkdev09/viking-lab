@@ -1,0 +1,225 @@
+.site-footer {
+  margin-top: 72px;
+  position: relative;
+}
+
+.site-footer__newsletter-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.site-footer__newsletter {
+  align-items: center;
+  background: #ee9964;
+  border-radius: 1px;
+  display: flex;
+  overflow: hidden;
+}
+
+.site-footer__newsletter-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.site-footer__newsletter-content {
+  color: #fff;
+  padding: 38px 42px 34px 28px;
+}
+
+.site-footer__newsletter-content h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.06;
+  margin: 0;
+}
+
+.site-footer__newsletter-content p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 14px 0 20px;
+}
+
+.site-footer__newsletter-form {
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  display: flex;
+  height: 38px;
+}
+
+.site-footer__newsletter-form input {
+  background: rgba(255, 255, 255, 0.14);
+  border: 0;
+  color: #fff;
+  flex: 1;
+  font-size: 12px;
+  height: 100%;
+  outline: 0;
+  padding: 0 14px;
+}
+
+.site-footer__newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.site-footer__newsletter-form button {
+  align-items: center;
+  background: #de8850;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 6px;
+  height: 100%;
+  justify-content: center;
+  min-width: 140px;
+  padding: 0 16px;
+}
+
+.site-footer__main {
+  background-image: url(https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/Group-1171276025.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -108px;
+  padding-top: 168px;
+}
+
+.site-footer__grid {
+  column-gap: 56px;
+  display: grid;
+  grid-template-columns: 1.16fr .92fr .76fr 1.1fr;
+  padding-bottom: 34px;
+}
+
+.site-footer__grid h3 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.site-footer__about {
+  max-width: 292px;
+}
+
+.site-footer__about p {
+  color: #c2d3ce;
+  font-size: 17px;
+  line-height: 1.62;
+  margin: 0 0 26px;
+}
+
+.site-footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.site-footer__socials a {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 12px;
+  height: 32px;
+  justify-content: center;
+  text-decoration: none;
+  width: 32px;
+}
+
+.site-footer__grid ul {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer__grid li,
+.site-footer__grid a {
+  color: #ccdbd6;
+  font-size: 16px;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.site-footer__contact ul {
+  gap: 15px;
+}
+
+.site-footer__contact li {
+  align-items: flex-start;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 18px 1fr;
+}
+
+.site-footer__contact li svg {
+  color: #f0f5f3;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.site-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 18px 0 22px;
+}
+
+.site-footer__bottom p {
+  color: #d6e2df;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .site-footer__newsletter {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__newsletter-image {
+    max-height: 280px;
+  }
+
+  .site-footer__main {
+    margin-top: -40px;
+    padding-top: 78px;
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    margin-top: 44px;
+  }
+
+  .site-footer__newsletter-content {
+    padding: 24px 18px 18px;
+  }
+
+  .site-footer__newsletter-content h2 {
+    font-size: 30px;
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
+}

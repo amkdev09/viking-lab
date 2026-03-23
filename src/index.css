@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+/* Disable zoom: prevent pinch-zoom and double-tap zoom on touch devices */
+html,
+body {
+  touch-action: pan-x pan-y;
+  -ms-touch-action: pan-x pan-y;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xmu-HUzqDCFdgfMm4GNAa5o_ik.woff2) format('woff2');
+  unicode-range: U +0100 -02BA, U +02BD -02C5, U +02C7 -02CC, U +02CE -02D7, U +02DD -02FF, U +0304, U +0308, U +0329, U +1D00 -1DBF, U +1E00 -1E9F, U +1EF2 -1EFF, U +2020, U +20A0 -20AB, U +20AD -20C0, U +2113, U +2C60 -2C7F, U + A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap ) format('woff2');
+  unicode-range: U +0100 -02BA, U +02BD -02C5, U +02C7 -02CC, U +02CE -02D7, U +02DD -02FF, U +0304, U +0308, U +0329, U +1D00 -1DBF, U +1E00 -1E9F, U +1EF2 -1EFF, U +2020, U +20A0 -20AB, U +20AD -20C0, U +2113, U +2C60 -2C7F, U + A720-A7FF;
+}
+
+:root {
+  --vtc-text-heading-text-1: #081120;
+  --vtc-text-heading-text-2: #19326A;
+  --vtc-text-heading-text-3: #001431;
+  --vtc-text-common-color-1: #5957E5;
+  --vtc-text-pera-text-2: #CCCCD5;
+  --vtc-text-pera-text-3: #5A5F6A;
+  --vtc-text-text-white-text-1: #ffffff;
+  --vtc-bg-main-bg-1: #fd965b;
+  --vtc-bg-main-bg-2: #FC253F;
+  --vtc-bg-main-bg-3: #fd965b;
+  --vtc-bg-main-bg-4: #23342E;
+  --vtc-bg-main-bg-5: #19326A;
+  --vtc-bg-main-bg-6: #52B5E9;
+  --vtc-bg-common-bg1: #FFF2E6;
+  --vtc-bg-common-bg2: #F5F3F4;
+  --vtc-bg-common-bg3: #28284D;
+  --vtc-bg-common-bg4: #FFFAEC;
+  --vtc-bg-common-bg5: #FFF4EF;
+  --vtc-bg-common-bg6: #E9EBEA;
+  --vtc-bg-common-bg7: #ECF3F6;
+  --vtc-bg-common-bg8: #E5E7EA;
+  --vtc-bg-common-bg9: #F2F4F7;
+  --vtc-bg-common-bg10: #5957E5;
+  --vtc-bg-bg-white: #ffffff;
+  --vtc-border-border-1: #f0f0f0;
+  --vtc-border-border-2: #dfdcdc;
+  --vtc-text-pera-text-1: #77787b;
+  --color-neutral-400: oklch(70.8% 0 0);
+  --color-brand-accent: #ed9d5f;
+  --color-black: #000;
+  --color-white: #fff;
+  --f-fw-regular: 400;
+  --f-fw-medium: 500;
+  --f-fw-semibold: 600;
+  --f-fw-bold: 700;
+  --f-fw-ex-bold: 800;
+  --f-ff-font-1: 'Figtree', sans-serif;
+  --f-fs-font-fs16: 16px;
+  --f-fs-font-fs18: 18px;
+  --f-fs-font-fs20: 20px;
+  --f-fs-font-fs22: 22px;
+  --f-fs-font-fs24: 24px;
+  --f-fs-font-fs26: 26px;
+  --f-fs-font-fs28: 28px;
+  --f-fs-font-fs30: 30px;
+  --f-fs-font-fs32: 32px;
+  --f-fs-font-fs34: 34px;
+  --f-fs-font-fs36: 36px;
+  --f-fs-font-fs40: 40px;
+  --f-fs-font-fs42: 42px;
+  --f-fs-font-fs44: 44px;
+  --f-fs-font-fs48: 48px;
+  --f-fs-font-fs50: 50px;
+  --f-fs-font-fs52: 52px;
+  --f-fs-font-fs54: 54px;
+  --f-fs-font-fs56: 56px;
+  --f-fs-font-fs58: 58px;
+  --f-fs-font-fs60: 60px;
+  --f-fs-font-fs62: 62px;
+  --f-fs-font-fs64: 64px;
+  --f-fs-font-fs66: 66px;
+  --f-fs-font-fs68: 68px;
+  --f-fs-font-fs70: 70px;
+  --f-fs-font-fs72: 72px;
+  --f-fs-font-fs74: 74px;
+  --f-fs-font-fs76: 76px;
+  --f-fs-font-fs78: 78px;
+  --f-fs-font-fs80: 80px;
+  --f-fs-font-fs82: 82px;
+  --f-fs-font-fs84: 84px;
+  --f-fs-font-fs86: 86px;
+  --f-fs-font-fs88: 88px;
+  --default-font-family: var(--font-sans);
+  --default-mono-font-family: var(--font-mono);
+  --color-primary: #04042b;
+  --color-foreground: #fff;
+  --color-brand-hero: #11382f;
+  --color-brand-hero-soft: #1b4a3e;
+  --color-brand-hero-deep: #0a2b24;
+  --color-brand-accent-hover: #cc8648;
+  --color-page-bg: #f4f0e6;
+  --color-surface: #ffffff;
+  --color-surface-soft: #faf6ef;
+  --color-text-title: #1d2b2a;
+  --color-text-body: #56625f;
+  --color-text-muted: #8e9794;
+  --color-nav-link: #cad9d4;
+  --color-kicker: #f2b377;
+  --color-hero-text: #d2e1dd;
+  --color-hero-border: rgba(255, 255, 255, 0.35);
+  --color-footer-bg: #143f35;
+  --color-footer-muted: #bdd0cb;
+  --color-border-soft: #ebe2d5;
+  --shadow-soft: 0 10px 28px rgba(17, 56, 47, 0.09);
+  --shadow-card: 0 8px 20px rgba(16, 38, 32, 0.08);
+  --radius-card: 1.125rem;
+  --radius-pill: 999px;
+  --spacing-section-y: 5rem;
+  --spacing-content-x: 1.5rem;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}

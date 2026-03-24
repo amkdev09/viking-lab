@@ -1,14 +1,15 @@
 import React from "react";
 import { FiArrowUpRight, FiMail, FiPhoneCall, FiCalendar, FiUser } from "react-icons/fi";
-import { FaPlay } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { HiOutlineLightBulb, HiOutlineDocumentText } from "react-icons/hi";
 import {
   RiCustomerService2Line,
   RiUserSearchLine,
   RiTeamLine,
   RiMedalLine,
-  RiFolderChartLine,
 } from "react-icons/ri";
+import SectionHeader from "../components/sections/header";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
 const LandingPage = () => {
   const topBrands = [
@@ -30,21 +31,21 @@ const LandingPage = () => {
   ];
 
   return (
-    <main className="bg-[#efefef] font-['Inter'] text-[#1b2a28]">
+    <main className="bg-[#ffffff] font-['Inter'] text-[#1b2a28]">
       <section
         className="relative vikin-hero flex overflow-hidden px-6 pb-[6.9rem] pt-[7.2rem] lg:pb-[5.3rem] lg:pt-[6.2rem] md:pb-[4.4rem] md:pt-[5.8rem]"
       >
-        <div className="container grid w-full justify-center items-center gap-12 lg:grid-cols-1 xl:grid-cols-[minmax(0,1fr)_minmax(350px,510px)]">
-          <div className="max-w-[560px]">
-            <span className="inline-flex rounded bg-white/15 px-[0.56rem] py-[0.37rem] text-[0.67rem] leading-none font-semibold tracking-[0.01em] text-[#f6f8f7]">
+        <div className="container flex items-center">
+          <div className="max-w-1/2">
+            <span className="inline-flex rounded bg-white/15 px-[0.56rem] py-[0.17rem] text-[length:var(--f-fs-font-fs16)] text-white font-semibold tracking-[0.01em]">
               Staffing Power Your Success
             </span>
 
-            <h1 className="mt-[1.1rem] max-w-[560px] font-['Poppins'] text-[clamp(2rem,3.35vw,3.46rem)] leading-[1.09] font-semibold tracking-[-0.03em] text-white">
+            <h1 className="mt-[1.1rem] font-['Poppins'] text-[length:var(--f-fs-font-fs64)] leading-[1.09] font-semibold tracking-[-0.03em] text-white">
               Growth Exceptional Talent Lets Build Success Together
             </h1>
 
-            <p className="mt-[1.15rem] max-w-[520px] text-[1.02rem] leading-[1.65] text-[#d2ddd9]">
+            <p className="mt-[1.15rem] text-[length:var(--f-fs-font-fs18)] leading-[1.65] text-[var(--vtc-text-pera-text-2)]">
               Our tailored staffing solutions streamline the hiring process
               saving you time and resources while ensuring the perfect fit.
             </p>
@@ -61,19 +62,23 @@ const LandingPage = () => {
             </div>
 
             <div className="mt-[1.35rem]">
-              <p className="text-[1.06rem] font-bold text-[#f4f6f6]">
+              <p className="text-[length:var(--f-fs-font-fs18)] font-bold text-[#f4f6f6]">
                 Trusted By 5,789 Users
               </p>
-              <p className="mt-[0.38rem] flex items-center gap-2 text-[0.95rem] text-[#d7dfdc]">
-                <span className="text-[0.9rem] tracking-[0.12em] text-[#f6b41a]">
-                  ★★★★★
+              <p className="mt-[0.38rem] flex items-center gap-2 text-[#d7dfdc]">
+                <span className="inline-flex items-center gap-2 text-[length:var(--f-fs-font-fs14)] tracking-[0.12em] text-[#f6b41a]">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar className="text-[#d7dfdc]" />
                 </span>
                 <span>4K Happy Client</span>
               </p>
             </div>
           </div>
 
-          <div className="w-full justify-self-end lg:max-w-[620px] lg:justify-self-stretch xl:max-w-none">
+          <div className="w-1/2">
             <div className="flex gap-4">
               <article className="relative flex-1 overflow-hidden">
                 <img
@@ -112,45 +117,47 @@ const LandingPage = () => {
       </section>
 
       <section className="px-6 py-[6.2rem]">
-        <div className="mx-auto grid w-full max-w-[1312px] gap-[2rem] xl:grid-cols-[minmax(0,665px)_minmax(0,1fr)] xl:items-start">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <img
-              src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=760&q=80"
-              alt="Business people discussing work"
-              className="h-[300px] w-full object-cover"
-            />
-
-            <div className="h-[115px] bg-[#f29459] px-6 pt-5 text-white md:mt-0">
-              <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
-                1590+
-              </p>
-              <p className="mt-2 text-[18px] font-medium">Happy Clients</p>
+        <div className="container flex gap-4">
+          <div className="flex w-1/2 gap-4">
+            <div className="flex w-1/2 flex-col gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=760&q=80"
+                alt="Business people discussing work"
+                className="w-full object-cover"
+              />
+              <div className="bg-[#173a33] px-6 pt-5 text-white py-5">
+                <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
+                  16+
+                </p>
+                <p className="mt-2 text-[18px] font-medium">Years of Experienced</p>
+              </div>
             </div>
 
-            <div className="h-[115px] bg-[#173a33] px-6 pt-5 text-white">
-              <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
-                16+
-              </p>
-              <p className="mt-2 text-[18px] font-medium">Years of Experienced</p>
+            <div className="flex w-1/2 flex-col gap-4">
+              <div className="bg-[#f29459] px-6 pt-5 text-white md:mt-0 py-5">
+                <p className="font-['Poppins'] text-[length:var(--f-fs-font-fs40)] leading-none font-semibold">
+                  1590+
+                </p>
+                <p className="mt-2 text-[length:var(--f-fs-font-fs16)] font-medium">Happy Clients</p>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
+                alt="Recruiter portrait"
+                className="w-full object-cover"
+              />
             </div>
-
-            <img
-              src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
-              alt="Recruiter portrait"
-              className="h-[300px] w-full object-cover"
-            />
           </div>
 
-          <div className="pt-1">
+          <div className="w-1/2 p-1">
             <span className="inline-flex h-[24px] items-center bg-[#dcddde] px-3 text-[12px] font-medium text-[#2d3542]">
               About Us
             </span>
 
-            <h2 className="mt-4 max-w-[560px] font-['Poppins'] text-[50px] leading-[1.08] font-semibold tracking-[-0.02em] text-[#131c2a]">
+            <h2 className="mt-4 font-['Poppins'] text-[length:var(--f-fs-font-fs44)] leading-[1.08] font-semibold tracking-[-0.02em] text-[#131c2a]">
               Our Story Connecting Talent, Powering Success
             </h2>
 
-            <p className="mt-4 max-w-[560px] text-[24px] leading-[1.55] text-[#5e646e]">
+            <p className="mt-4 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5e646e]">
               Our team of industry experts is dedicated to understanding your
               unique needs and delivering tailored solutions that propel your
               business forward.
@@ -162,10 +169,10 @@ const LandingPage = () => {
                   <HiOutlineLightBulb className="text-[22px]" />
                 </span>
                 <div>
-                  <h3 className="font-['Poppins'] text-[31px] leading-[1.2] font-semibold text-[#141c2a]">
+                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-[#141c2a]">
                     Empowering Careers, Driving Growth
                   </h3>
-                  <p className="mt-1 text-[23px] leading-[1.55] text-[#5f656f]">
+                  <p className="mt-1 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5f656f]">
                     we are your strategic partner in talent acquisition. With a
                     steadfast commitment to excellence
                   </p>
@@ -174,13 +181,13 @@ const LandingPage = () => {
 
               <div className="flex gap-4">
                 <span className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#ece7df] text-[#d1844d]">
-                  <HiOutlineDocumentText className="text-[22px]" />
+                  <HiOutlineDocumentText className="text-[length:var(--f-fs-font-fs22)]" />
                 </span>
                 <div>
-                  <h3 className="font-['Poppins'] text-[31px] leading-[1.2] font-semibold text-[#141c2a]">
+                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-[#141c2a]">
                     Leaders in Staffing Excellence
                   </h3>
-                  <p className="mt-1 text-[23px] leading-[1.55] text-[#5f656f]">
+                  <p className="mt-1 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5f656f]">
                     Discover the difference with Your Agency Name and unlock new
                     possibilities for growth
                   </p>
@@ -190,7 +197,7 @@ const LandingPage = () => {
 
             <button
               type="button"
-              className="mt-8 inline-flex h-14 items-center gap-2 bg-[#f39f5a] px-6 text-[18px] font-semibold text-white transition-colors duration-200 hover:bg-[#e58f49]"
+              className="theme-btn6 mt-8"
             >
               <span>About Us</span>
               <FiArrowUpRight aria-hidden="true" />
@@ -199,26 +206,20 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#f1eee1] px-6 py-[6.6rem]">
-        <span className="pointer-events-none absolute top-[-90px] left-[-120px] h-[360px] w-[360px] rounded-full bg-[#ece8da]" />
-        <span className="pointer-events-none absolute top-12 right-8 text-[68px] leading-none text-[#e3dcc9]">
+      <section className="relative overflow-hidden bg-[#fffbec] px-6 py-[6.6rem]">
+        <span className="pointer-events-none absolute top-[0] left-[-50%] h-[110%] w-[80%] rounded-full bg-[#faf6e8]" />
+        <span className="pointer-events-none absolute top-2 right-0 text-[length:var(--f-fs-font-fs48)] leading-none text-[#f8dac5]">
+          ✧
+        </span>
+        <span className="pointer-events-none absolute top-8 right-8 text-[length:var(--f-fs-font-fs48)] leading-none text-[#f8dac5]">
+          ✧
+        </span>
+        <span className="pointer-events-none absolute top-2 right-16 text-[length:var(--f-fs-font-fs48)] leading-none text-[#f8dac5]">
           ✧
         </span>
 
         <div className="relative mx-auto w-full max-w-[1312px]">
-          <div className="mx-auto max-w-[760px] text-center">
-            <span className="inline-flex h-[24px] items-center bg-[#dcddde] px-3 text-[12px] font-medium text-[#2d3542]">
-              Our Service
-            </span>
-            <h2 className="mt-4 font-['Poppins'] text-[52px] leading-[1.08] font-semibold tracking-[-0.02em] text-[#111827]">
-              Temporary Staffing Services
-            </h2>
-            <p className="mx-auto mt-4 max-w-[700px] text-[22px] leading-[1.55] text-[#5f666f]">
-              With our proven track record and commitment to excellence, we re
-              here to support your organization&apos;s growth and help you
-              achieve
-            </p>
-          </div>
+          <SectionHeader type="Our Service" title="Temporary Staffing Services" description="With our proven track record and commitment to excellence, we re here to support your organization's growth and help you achieve" />
 
           <div className="mt-11 grid grid-cols-1 gap-4 lg:grid-cols-2">
             {[
@@ -243,13 +244,13 @@ const LandingPage = () => {
                 key={title}
                 className="min-h-[273px] bg-white px-8 py-7 shadow-[0_0_0_1px_rgba(17,24,39,0.02)]"
               >
-                <span className="inline-flex h-11 w-11 items-center justify-center bg-[#f9f4ef] text-[#d68c54]">
-                  <Icon className="text-[24px]" />
+                <span className="inline-flex h-16 w-16 items-center justify-center bg-[#f9f4ef] rounded-[4px] text-[#d68c54]">
+                  <Icon className="text-[32px]" />
                 </span>
-                <h3 className="mt-5 font-['Poppins'] text-[35px] leading-[1.2] font-semibold text-[#131b2a]">
+                <h3 className="mt-5 font-['Poppins'] text-[length:var(--f-fs-font-fs22)] leading-[1.2] font-semibold text-[#131b2a]">
                   {title}
                 </h3>
-                <p className="mt-4 max-w-[560px] text-[22px] leading-[1.55] text-[#5f666f]">
+                <p className="mt-4 text-[length:var(--f-fs-font-fs16)] leading-[1.55] text-[#5f666f]">
                   HR Consulting &amp; Staffing Our HR consulting and staffing
                   support services provide guidance and expertise in areas such
                   as compliance, workforce planning, and talent management,
@@ -268,83 +269,72 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="bg-[#f1eee1] px-6 pb-[5.8rem] pt-[5.8rem]">
-        <div className="mx-auto w-full max-w-[1040px] text-center">
-          <div className="inline-flex h-[20px] items-center justify-center bg-[#e7e1d1] px-[14px] text-[11px] font-medium text-[#2d3542]">
-            Case Studies
+      <section className="px-6 pb-[5.8rem] pt-[5.8rem] ">
+        <SectionHeader type="Case Studies" title="Elevate Your Talent Strategy" description="Our tailored services include talent acquisition, recruitment expertise, and industry-specific staffing solutions to help you build" />
+
+        <div className="container">
+          <div className="mt-12 grid w-full grid-cols-3 grid-rows-[210px_210px] gap-[18px]">
+            {/* Left top */}
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
+              alt="Team collaborating in an office"
+              className="h-full w-full object-cover rounded-[4px]"
+            />
+
+            {/* Middle top */}
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+              alt="Interview and candidate discussion"
+              className="h-full w-full object-cover rounded-[4px]"
+            />
+
+            {/* Right (spans two rows) */}
+            <img
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80"
+              alt="Manager reviewing documents"
+              className="row-span-2 h-full w-full object-cover rounded-[4px]"
+            />
+
+            {/* Left bottom */}
+            <img
+              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+              alt="Group discussion"
+              className="h-full w-full object-cover rounded-[4px]"
+            />
+
+            {/* Middle bottom */}
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80"
+              alt="Team presenting and reviewing"
+              className="h-full w-full object-cover rounded-[4px]"
+            />
           </div>
-          <h2 className="mt-4 font-['Poppins'] text-[30px] font-semibold leading-[1.2] text-[#111827]">
-            Elevate Your Talent Strategy
-          </h2>
-          <p className="mx-auto mt-2 max-w-[640px] text-[12px] leading-[1.5] text-[#6b727a]">
-            Our tailored services include talent acquisition, recruitment
-            expertise, and industry-specific staffing solutions to help you
-            build
-          </p>
-        </div>
-
-        <div className="mx-auto mt-12 grid w-full max-w-[860px] grid-cols-3 grid-rows-[210px_210px] gap-[18px]">
-          {/* Left top */}
-          <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
-            alt="Team collaborating in an office"
-            className="h-full w-full object-cover"
-          />
-
-          {/* Middle top */}
-          <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
-            alt="Interview and candidate discussion"
-            className="h-full w-full object-cover"
-          />
-
-          {/* Right (spans two rows) */}
-          <img
-            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80"
-            alt="Manager reviewing documents"
-            className="row-span-2 h-full w-full object-cover"
-          />
-
-          {/* Left bottom */}
-          <img
-            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
-            alt="Group discussion"
-            className="h-full w-full object-cover"
-          />
-
-          {/* Middle bottom */}
-          <img
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80"
-            alt="Team presenting and reviewing"
-            className="h-full w-full object-cover"
-          />
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#173d37] px-6 pb-[5.8rem] pt-[4.5rem]">
-        <span className="pointer-events-none absolute right-[-340px] top-[-220px] h-[760px] w-[760px] rounded-full bg-[#1e4941]" />
-        <span className="pointer-events-none absolute right-[-220px] top-[-70px] h-[520px] w-[520px] rounded-full bg-[#214f46]" />
+      <section className="relative overflow-hidden bg-[#23342f] px-6 pb-[5.8rem] pt-[4.5rem]">
+        <span className="pointer-events-none absolute right-[-300px] top-[0] h-[110%] w-[38%] rounded-full bg-[#273832]" />
 
-        <div className="relative mx-auto w-full max-w-[1312px]">
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_1fr]">
-            <div>
-              <span className="inline-flex h-[20px] items-center bg-white/16 px-[9px] text-[10px] leading-none font-medium text-white">
+        <div className="relative container w-full">
+          <div className="flex gap-8">
+            <div className="w-1/2">
+              <span className="inline-flex rounded-[4px] items-center bg-[#5b6864] px-[9px] py-[2px] text-[length:var(--f-fs-font-fs16)] font-medium text-white">
                 How it Work
               </span>
-              <h2 className="mt-4 max-w-[560px] font-['Poppins'] text-[53px] leading-[1.08] font-semibold tracking-[-0.02em] text-white">
+              <h2 className="mt-4 font-['Poppins'] text-[length:var(--f-fs-font-fs44)] leading-[1.08] font-semibold tracking-[-0.02em] text-white">
                 Our Portfolio: Showcasing Successful Placements
               </h2>
             </div>
 
-            <div className="pt-[2px]">
-              <p className="max-w-[560px] text-[17px] leading-[1.56] text-[#d3e1dd]">
+            <div className="w-1/2 pt-[2px]">
+              <p className="text-[length:var(--f-fs-font-fs18)] leading-[1.56] text-[#d3e1dd]">
                 Through our tailored staffing solutions and industry expertise,
                 we&apos;ve facilitated countless success stories, from small
                 businesses to Fortune 500 companies Our portfolio highlights.
               </p>
               <button
                 type="button"
-                className="mt-5 inline-flex h-[42px] items-center gap-1 bg-[#f39f5a] px-5 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-[#e58f49]"
+                className="theme-btn6 mt-5"
               >
                 <span>See Plans</span>
                 <FiArrowUpRight aria-hidden="true" />
@@ -352,7 +342,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="mt-7 grid gap-5 lg:grid-cols-3">
+          <div className="mt-7 flex">
             {[
               {
                 title: "Employee On-Boarding Checklist",
@@ -368,71 +358,67 @@ const LandingPage = () => {
               },
             ].map((item, index) => (
               <article key={`${item.title}-${index}`}>
-                <div className="flex items-center gap-2">
-                  <span className="text-[15px] inline-flex h-[31px] w-[31px] items-center justify-center bg-[#f39f5a] text-white">
-                    {index + 1}
+                <div className="flex items-center ">
+                  <span className="relative text-[15px] inline-flex h-[44px] w-[44px] items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="40" viewBox="0 0 56 40" fill="none">
+                      <path d="M0 4C0 1.79086 1.79086 0 4 0H33.7195C34.7204 0 35.6849 0.375212 36.4226 1.05157L52.9411 16.1956C54.612 17.7275 54.6773 20.3403 53.085 21.9537L36.4503 38.8097C35.6987 39.5713 34.6733 40 33.6032 40H4C1.79086 40 0 38.2091 0 36V4Z" fill="#FD965B">
+                      </path>
+                    </svg>
+                    <span className="absolute top-1/2 left-[16px] -translate-x-1/2 -translate-y-1/2 text-[length:var(--f-fs-font-fs16)] leading-[1.2] font-semibold text-white">
+                      {index + 1}
+                    </span>
                   </span>
                   <span className="h-[1px] w-full bg-[#f39f5a]" />
                 </div>
-                <h3 className="mt-3 max-w-[365px] font-['Poppins'] text-[26px] leading-[1.2] font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-2 max-w-[390px] text-[15px] leading-[1.52] text-[#d1dfdb]">
-                  {item.body}
-                </p>
+                <div className="pr-12">
+                  <h3 className="mt-3 font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-white hover:text-[#fd965b]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-[length:var(--f-fs-font-fs16)] leading-[1.52] text-[#d1dfdb]">
+                    {item.body}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#efefef] px-6 pb-[7rem] pt-[5.7rem]">
-        <div className="mx-auto w-full max-w-[1312px]">
-          <div className="grid items-start gap-8 md:grid-cols-[1fr_auto]">
-            <div className="max-w-[560px]">
-              <span className="inline-flex h-[20px] items-center bg-[#dadcde] px-[8px] text-[10px] font-medium text-[#2d3542]">
-                Testimonial
-              </span>
-              <h2 className="mt-3 font-['Poppins'] text-[53px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#121a29]">
-                Feedback from Satisfied Customers
-              </h2>
-              <p className="mt-4 max-w-[520px] text-[16px] leading-[1.62] text-[#5f6670]">
-                We take pride in delivering exceptional staffing solutions that
-                exceed our clients&apos; expectations. But don&apos;t just take
-                our word for it
-              </p>
-            </div>
+      <section className="px-6 pb-[7rem] pt-[5.7rem]">
+        <div className="container">
+          <div className="flex items-center justify-between">
+            <SectionHeader type="Testimonial" title="Feedback from Satisfied Customers" description="We take pride in delivering exceptional staffing solutions that exceed our clients' expectations. But don't just take our word for it" textAlign="start" />
 
             <div className="mt-6 flex gap-2 md:mt-[34px]">
               <button
                 type="button"
                 className="inline-flex h-11 w-11 items-center justify-center bg-[#dfe0e2] text-[18px] text-[#263140]"
               >
-                ←
+                <IoMdArrowBack />
               </button>
               <button
                 type="button"
                 className="inline-flex h-11 w-11 items-center justify-center bg-[#dfe0e2] text-[18px] text-[#263140]"
               >
-                →
+                <IoMdArrowForward />
               </button>
             </div>
           </div>
 
           <div className="mt-8 grid gap-[14px] lg:grid-cols-2">
             <div>
-              <article className="relative border border-[#ddb995] bg-[#f4eee0] px-7 py-6">
+              <article className="relative rounded-[8px] border border-[#ddb995] bg-[#fffaec] px-7 py-6">
                 <div className="flex gap-[6px]">
                   {Array.from({ length: 5 }).map((_, index) => (
                     <span
                       key={`star-a-${index}`}
                       className="inline-flex h-7 w-7 items-center justify-center bg-[#f7e7d9] text-[13px] text-[#f39f5a]"
                     >
-                      ★
+                      <FaStar />
                     </span>
                   ))}
                 </div>
-                <p className="mt-5 text-[17px] leading-[1.62] text-[#434b57]">
+                <p className="mt-5 text-[length:var(--f-fs-font-fs18)] leading-[1.62] text-[var(--vtc-text-pera-text-4)]">
                   “Discover what our clients have to say about their experience
                   with Recrute. From small businesses to Fortune 500 companies,
                   our tailored staffing solutions have left a lasting impact on
@@ -462,18 +448,18 @@ const LandingPage = () => {
             </div>
 
             <div>
-              <article className="bg-[#f1ecdf] px-7 py-6">
+              <article className="bg-[#fffaec] rounded-[8px] px-7 py-6">
                 <div className="flex gap-[6px]">
                   {Array.from({ length: 5 }).map((_, index) => (
                     <span
                       key={`star-b-${index}`}
                       className="inline-flex h-7 w-7 items-center justify-center bg-[#f7e7d9] text-[13px] text-[#f39f5a]"
                     >
-                      ★
+                      <FaStar />
                     </span>
                   ))}
                 </div>
-                <p className="mt-5 text-[17px] leading-[1.62] text-[#434b57]">
+                <p className="mt-5 text-[length:var(--f-fs-font-fs18)] leading-[1.62] text-[var(--vtc-text-pera-text-1)]">
                   “From startups seeking their first hires to established
                   corporations aiming to expand their teams, our tailored
                   staffing solutions have consistently exceeded expectations.
@@ -504,20 +490,10 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="bg-[#f1eee1] px-6 pb-[7.2rem] pt-[5.8rem]">
-        <div className="mx-auto w-full max-w-[1312px]">
-          <div className="mx-auto max-w-[760px] text-center">
-            <span className="inline-flex h-[22px] items-center bg-[#dfe0e2] px-[10px] text-[10px] font-medium text-[#2d3542]">
-              Our Service
-            </span>
-            <h2 className="mt-4 font-['Poppins'] text-[53px] leading-[1.08] font-semibold tracking-[-0.02em] text-[#121a29]">
-              Temporary Staffing Services
-            </h2>
-            <p className="mx-auto mt-4 max-w-[720px] text-[16px] leading-[1.62] text-[#626a73]">
-              With our proven track record and commitment to excellence, we&apos;re
-              here to support your organization&apos;s growth and help you achieve
-            </p>
-          </div>
+      <section className="bg-[#fffbec] px-6 pb-[7.2rem] pt-[5.8rem]">
+        <div className="container">
+          <SectionHeader type="Our Service" title="Temporary Staffing Services" description="With our proven track record and commitment to excellence, we're here to support your organization's growth and help you achieve" />
+
 
           <div className="mx-auto mt-10 grid w-full max-w-[980px] gap-4 md:grid-cols-3">
             {[
@@ -541,16 +517,18 @@ const LandingPage = () => {
               },
             ].map((member) => (
               <article key={member.name} className="overflow-hidden bg-white">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="h-[282px] w-full object-cover"
-                />
+                <figure className="w-full h-[282px]">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </figure>
                 <div className="px-4 pb-5 pt-4 text-center">
-                  <h3 className="font-['Poppins'] text-[30px] leading-[1.2] font-semibold text-[#131b2a]">
+                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs22)] leading-[1.2] font-semibold text-[#131b2a]">
                     {member.name}
                   </h3>
-                  <p className="mt-1 text-[14px] text-[#737a82]">{member.role}</p>
+                  <p className="mt-1 text-[length:var(--f-fs-font-fs16)] text-[#737a82]">{member.role}</p>
                 </div>
               </article>
             ))}
@@ -558,16 +536,16 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="overflow-hidden bg-[#f2f2f2] py-[3.2rem]">
+      <section className="overflow-hidden py-[5rem]">
         <div className="mx-auto w-full max-w-[1312px] px-6">
-          <div className="mb-4 border-t border-[#dddddd] pt-4 text-center">
-            <p className="font-['Poppins'] text-[19px] font-semibold text-[#111a29]">
+          <div className="mb-4 pt-4 text-center">
+            <p className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] font-semibold text-[#111a29]">
               More Than 5K+ Brands With Work Recrute
             </p>
           </div>
         </div>
 
-        <div className="space-y-[18px]">
+        <div className="space-y-[1.125rem] mt-[5rem]">
           <div className="relative">
             <div
               className="flex w-max gap-4"
@@ -576,9 +554,9 @@ const LandingPage = () => {
               {[...topBrands, ...topBrands].map((brand, index) => (
                 <article
                   key={`top-${brand}-${index}`}
-                  className="flex h-[56px] min-w-[168px] items-center justify-center border border-[#ded8c9] bg-[#f7f7f7] px-6"
+                  className="flex h-[64px] min-w-[168px] items-center justify-center border border-[#ded8c9] bg-[#f7f7f7] px-6"
                 >
-                  <span className="font-['Poppins'] text-[22px] leading-none font-semibold text-[#2a3442]">
+                  <span className="font-['Poppins'] text-[length:var(--f-fs-font-fs22)] leading-none font-semibold text-[#2a3442]">
                     {brand}
                   </span>
                 </article>
@@ -594,7 +572,7 @@ const LandingPage = () => {
               {[...bottomBrands, ...bottomBrands].map((brand, index) => (
                 <article
                   key={`bottom-${brand}-${index}`}
-                  className="flex h-[56px] min-w-[168px] items-center justify-center border border-[#ded8c9] bg-[#f7f7f7] px-6"
+                  className="flex h-[64px] min-w-[168px] items-center justify-center border border-[#ded8c9] bg-[#f7f7f7] px-6"
                 >
                   <span className="font-['Poppins'] text-[21px] leading-none font-semibold text-[#2a3442]">
                     {brand}
@@ -606,22 +584,10 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="bg-[#f1eee1] px-6 pb-[7.5rem] pt-[5.8rem]">
+      <section className="bg-[#fffbec] px-6 pb-[7.5rem] pt-[5.8rem]">
         <div className="mx-auto grid w-full max-w-[1312px] items-start gap-8 lg:grid-cols-[1fr_600px]">
           <div className="max-w-[640px] pt-2">
-            <span className="inline-flex h-[20px] items-center bg-[#dfe0e2] px-[10px] text-[10px] font-medium text-[#2d3542]">
-              Contact Us
-            </span>
-
-            <h2 className="mt-4 font-['Poppins'] text-[56px] leading-[1.08] font-semibold tracking-[-0.02em] text-[#121a29]">
-              Get in Touch Lets Start the Conversation
-            </h2>
-
-            <p className="mt-5 max-w-[560px] text-[16px] leading-[1.6] text-[#626a73]">
-              We are here to help you find the right staffing solutions for your
-              needs. Whether you are a company looking to hire top talent or a
-              candidate seeking your next career opportunity
-            </p>
+            <SectionHeader type="Contact Us" title="Get in Touch Lets Start the Conversation" description="We are here to help you find the right staffing solutions for your needs. Whether you are a company looking to hire top talent or a candidate seeking your next career opportunity" textAlign="start" />
 
             <div className="mt-7 space-y-4">
               <article className="flex min-h-[88px] items-center gap-4 bg-white px-7">

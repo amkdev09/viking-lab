@@ -33,45 +33,47 @@ const AboutUs = () => {
       </section>
 
       <section className="px-6 py-[6.2rem]">
-        <div className="mx-auto grid w-full max-w-[1312px] gap-[2rem] xl:grid-cols-[minmax(0,665px)_minmax(0,1fr)] xl:items-start">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <img
-              src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=760&q=80"
-              alt="Business people discussing work"
-              className="h-[300px] w-full object-cover"
-            />
-
-            <div className="h-[115px] bg-[#f29459] px-6 pt-5 text-white md:mt-0">
-              <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
-                1590+
-              </p>
-              <p className="mt-2 text-[18px] font-medium">Happy Clients</p>
+        <div className="container flex gap-4">
+          <div className="flex w-1/2 gap-4">
+            <div className="flex w-1/2 flex-col gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=760&q=80"
+                alt="Business people discussing work"
+                className="w-full object-cover"
+              />
+              <div className="bg-[#173a33] px-6 pt-5 text-white py-5">
+                <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
+                  16+
+                </p>
+                <p className="mt-2 text-[18px] font-medium">Years of Experienced</p>
+              </div>
             </div>
 
-            <div className="h-[115px] bg-[#173a33] px-6 pt-5 text-white">
-              <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
-                16+
-              </p>
-              <p className="mt-2 text-[18px] font-medium">Years of Experienced</p>
+            <div className="flex w-1/2 flex-col gap-4">
+              <div className="bg-[#f29459] px-6 pt-5 text-white md:mt-0 py-5">
+                <p className="font-['Poppins'] text-[length:var(--f-fs-font-fs40)] leading-none font-semibold">
+                  1590+
+                </p>
+                <p className="mt-2 text-[length:var(--f-fs-font-fs16)] font-medium">Happy Clients</p>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
+                alt="Recruiter portrait"
+                className="w-full object-cover"
+              />
             </div>
-
-            <img
-              src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
-              alt="Recruiter portrait"
-              className="h-[300px] w-full object-cover"
-            />
           </div>
 
-          <div className="pt-1">
+          <div className="w-1/2 p-1">
             <span className="inline-flex h-[24px] items-center bg-[#dcddde] px-3 text-[12px] font-medium text-[#2d3542]">
               About Us
             </span>
 
-            <h2 className="mt-4 max-w-[560px] font-['Poppins'] text-[50px] leading-[1.08] font-semibold tracking-[-0.02em] text-[#131c2a]">
+            <h2 className="mt-4 font-['Poppins'] text-[length:var(--f-fs-font-fs44)] leading-[1.08] font-semibold tracking-[-0.02em] text-[#131c2a]">
               Our Story Connecting Talent, Powering Success
             </h2>
 
-            <p className="mt-4 max-w-[560px] text-[24px] leading-[1.55] text-[#5e646e]">
+            <p className="mt-4 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5e646e]">
               Our team of industry experts is dedicated to understanding your
               unique needs and delivering tailored solutions that propel your
               business forward.
@@ -83,10 +85,10 @@ const AboutUs = () => {
                   <HiOutlineLightBulb className="text-[22px]" />
                 </span>
                 <div>
-                  <h3 className="font-['Poppins'] text-[31px] leading-[1.2] font-semibold text-[#141c2a]">
+                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-[#141c2a]">
                     Empowering Careers, Driving Growth
                   </h3>
-                  <p className="mt-1 text-[23px] leading-[1.55] text-[#5f656f]">
+                  <p className="mt-1 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5f656f]">
                     we are your strategic partner in talent acquisition. With a
                     steadfast commitment to excellence
                   </p>
@@ -95,13 +97,13 @@ const AboutUs = () => {
 
               <div className="flex gap-4">
                 <span className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#ece7df] text-[#d1844d]">
-                  <HiOutlineDocumentText className="text-[22px]" />
+                  <HiOutlineDocumentText className="text-[length:var(--f-fs-font-fs22)]" />
                 </span>
                 <div>
-                  <h3 className="font-['Poppins'] text-[31px] leading-[1.2] font-semibold text-[#141c2a]">
+                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-[#141c2a]">
                     Leaders in Staffing Excellence
                   </h3>
-                  <p className="mt-1 text-[23px] leading-[1.55] text-[#5f656f]">
+                  <p className="mt-1 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5f656f]">
                     Discover the difference with Your Agency Name and unlock new
                     possibilities for growth
                   </p>
@@ -111,7 +113,7 @@ const AboutUs = () => {
 
             <button
               type="button"
-              className="mt-8 inline-flex h-14 items-center gap-2 bg-[#f39f5a] px-6 text-[18px] font-semibold text-white transition-colors duration-200 hover:bg-[#e58f49]"
+              className="theme-btn6 mt-8"
             >
               <span>About Us</span>
               <FiArrowUpRight aria-hidden="true" />

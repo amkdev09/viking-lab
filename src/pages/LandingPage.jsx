@@ -32,7 +32,7 @@ const LandingPage = () => {
   return (
     <main className="bg-[#efefef] font-['Inter'] text-[#1b2a28]">
       <section
-        className="relative vikin-hero overflow-hidden px-6 pb-[6.9rem] pt-[7.2rem] lg:pb-[5.3rem] lg:pt-[6.2rem] md:pb-[4.4rem] md:pt-[5.8rem]"
+        className="relative vikin-hero flex overflow-hidden px-6 pb-[6.9rem] pt-[7.2rem] lg:pb-[5.3rem] lg:pt-[6.2rem] md:pb-[4.4rem] md:pt-[5.8rem]"
       >
         <div className="container grid w-full justify-center items-center gap-12 lg:grid-cols-1 xl:grid-cols-[minmax(0,1fr)_minmax(350px,510px)]">
           <div className="max-w-[560px]">
@@ -75,14 +75,14 @@ const LandingPage = () => {
 
           <div className="w-full justify-self-end lg:max-w-[620px] lg:justify-self-stretch xl:max-w-none">
             <div className="flex gap-4">
-              <article className="relative overflow-hidden">
+              <article className="relative flex-1 overflow-hidden">
                 <img
                   src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img1.png"
                   alt="Team reviewing talent profiles together"
-                  className="block h-full w-full object-cover"
+                  className="object-contain"
                 />
               </article>
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-4">
                 <article className="relative overflow-hidden">
                   <img
                     src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img2.png"

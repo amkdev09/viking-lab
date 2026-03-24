@@ -16,7 +16,7 @@ html {
 img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .container {
@@ -31,6 +31,10 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 900px;
+
+    img {
+        object-fit: cover;
+    }
 }
 
 .theme-btn6 {
@@ -165,13 +169,28 @@ img {
     border-radius: 0px;
 }
 
-.video-area .video-buttton {
+.video-area .video-buttton,
+.video-buttton {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.video-play-button {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
     align-items: center;
     justify-content: center;
 }
@@ -204,6 +223,35 @@ img {
     background: var(--vtc-bg-main-bg-3);
     border-radius: 50%;
     transition: all 200ms;
+}
+
+.video-play-button span {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-left: 3px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #ffffff;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        opacity: 0.9;
+    }
+
+    70% {
+        transform: translateX(-50%) translateY(-50%) scale(1.25);
+        opacity: 0.35;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) scale(1.4);
+        opacity: 0;
+    }
 }
 
 .vikin-loader {

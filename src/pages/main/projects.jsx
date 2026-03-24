@@ -1,5 +1,6 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import PageHero from "../../components/sections/pageHero";
 
 const projectCards = [
   "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80",
@@ -16,32 +17,16 @@ const projectCards = [
 const ProjectsPage = () => {
   return (
     <main className="bg-[#f3f3f3]">
-      <section
-        className="px-6 py-[62px] text-center"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(14,53,47,1) 0%, rgba(10,43,39,1) 55%, rgba(15,57,51,1) 100%)",
-        }}
-      >
-        <h1 className="font-['Poppins'] text-[48px] leading-none font-semibold text-white">
-          Our Projects
-        </h1>
-
-        <p className="mt-4 text-[13px] font-medium tracking-[0.01em] text-white/90">
-          Recrute Sites
-          <span className="mx-2 text-white/70">»</span>
-          Staffing Agency
-          <span className="mx-2 text-white/70">»</span>
-          <span className="text-white">Our Projects</span>
-        </p>
-      </section>
-
+      <PageHero
+        title="Our Projects"
+        breadcrumbs={["Recrute Sites", "Staffing Agency", "Our Projects"]}
+      />
       <section className="px-6 pb-[60px] pt-[46px]">
-        <div className="mx-auto grid w-full max-w-[820px] grid-cols-1 gap-[14px] sm:grid-cols-2 lg:grid-cols-3">
+        <div className="container grid w-full grid-cols-1 gap-[14px] sm:grid-cols-2 lg:grid-cols-3">
           {projectCards.map((image, index) => (
             <article
               key={`${image}-${index}`}
-              className="relative h-[220px] overflow-hidden bg-white"
+              className="relative h-[464px] overflow-hidden bg-white rounded-[4px]"
             >
               <img
                 src={image}
@@ -50,15 +35,15 @@ const ProjectsPage = () => {
                 loading="lazy"
               />
 
-              <div className="absolute right-[10px] bottom-[10px] left-[10px] bg-[#f39f5a] px-[12px] py-[7px] text-white">
-                <p className="text-[9px] font-medium text-white/90">
+              <div className="absolute right-[20px] bottom-[24px] left-[20px] bg-[var(--vtc-bg-main-bg-1)] px-[28px] py-[16px] text-white">
+                <p className="text-[length:var(--f-fs-font-fs16)] font-medium text-white/90">
                   Staffing Service
                 </p>
                 <div className="mt-[4px] flex items-center justify-between gap-3">
-                  <h3 className="max-w-[155px] text-[13px] leading-[1.25] font-semibold">
+                  <h3 className="max-w-[155px] text-[length:var(--f-fs-font-fs22)] leading-[1.25] font-semibold">
                     Demonstrating Our Expertise
                   </h3>
-                  <span className="inline-flex h-[24px] w-[24px] shrink-0 items-center justify-center rounded-full bg-white text-[11px] text-[#f39f5a]">
+                  <span className="inline-flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full bg-white text-[length:var(--f-fs-font-fs16)] text-[#f39f5a]">
                     <FiArrowUpRight aria-hidden="true" />
                   </span>
                 </div>

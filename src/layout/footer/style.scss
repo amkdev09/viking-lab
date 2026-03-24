@@ -10,8 +10,8 @@
 
 .site-footer__newsletter {
   align-items: center;
-  background: #ee9964;
-  border-radius: 1px;
+  background: var(--vtc-bg-main-bg-1);
+  border-radius: 4px;
   display: flex;
   overflow: hidden;
 }
@@ -36,7 +36,7 @@
 .site-footer__newsletter-content h2 {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 46px;
+  font-size: var(--f-fs-font-fs44);
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.06;
@@ -45,7 +45,7 @@
 
 .site-footer__newsletter-content p {
   color: rgba(255, 255, 255, 0.74);
-  font-size: 12px;
+  font-size: var(--f-fs-font-fs16);
   line-height: 1.45;
   margin: 14px 0 20px;
 }
@@ -53,39 +53,42 @@
 .site-footer__newsletter-form {
   align-items: center;
   border: 2px solid rgba(255, 255, 255, 0.45);
+  background-color: #fff;
   display: flex;
+  border-radius: 4px;
   height: 38px;
 }
 
 .site-footer__newsletter-form input {
   background: rgba(255, 255, 255, 0.14);
   border: 0;
-  color: #fff;
+  color: var(--vtc-text-heading-text-1);
   flex: 1;
-  font-size: 12px;
+  font-size: var(--f-fs-font-fs16);
   height: 100%;
   outline: 0;
   padding: 0 14px;
 }
 
 .site-footer__newsletter-form input::placeholder {
-  color: rgba(255, 255, 255, 0.74);
+  color: var(--vtc-text-pera-text-1);
 }
 
 .site-footer__newsletter-form button {
   align-items: center;
-  background: #de8850;
+  background: var(--vtc-bg-main-bg-1);
   border: 0;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-size: 12px;
+  font-size: var(--f-fs-font-fs16);
   font-weight: 700;
   gap: 6px;
   height: 100%;
   justify-content: center;
   min-width: 140px;
   padding: 0 16px;
+  border-radius: 4px;
 }
 
 .site-footer__main {
@@ -101,13 +104,13 @@
   column-gap: 56px;
   display: grid;
   grid-template-columns: 1.16fr .92fr .76fr 1.1fr;
-  padding-bottom: 34px;
+  margin-bottom: 64px;
 }
 
 .site-footer__grid h3 {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: var(--f-fs-font-fs20);
   font-weight: 600;
   margin: 0 0 18px;
 }
@@ -118,7 +121,7 @@
 
 .site-footer__about p {
   color: #c2d3ce;
-  font-size: 17px;
+  font-size: var(--f-fs-font-fs18);
   line-height: 1.62;
   margin: 0 0 26px;
 }
@@ -134,7 +137,7 @@
   border-radius: 999px;
   color: #fff;
   display: inline-flex;
-  font-size: 12px;
+  font-size: var(--f-fs-font-fs16);
   height: 32px;
   justify-content: center;
   text-decoration: none;
@@ -152,7 +155,7 @@
 .site-footer__grid li,
 .site-footer__grid a {
   color: #ccdbd6;
-  font-size: 16px;
+  font-size: var(--f-fs-font-fs16);
   line-height: 1.45;
   text-decoration: none;
 }
@@ -170,7 +173,7 @@
 
 .site-footer__contact li svg {
   color: #f0f5f3;
-  font-size: 16px;
+  font-size: var(--f-fs-font-fs18);
   margin-top: 3px;
 }
 
@@ -181,7 +184,7 @@
 
 .site-footer__bottom p {
   color: #d6e2df;
-  font-size: 14px;
+  font-size: var(--f-fs-font-fs16);
   margin: 0;
   text-align: center;
 }
@@ -216,7 +219,7 @@
   }
 
   .site-footer__newsletter-content h2 {
-    font-size: 30px;
+    font-size: var(--f-fs-font-fs30);
   }
 
   .site-footer__grid {

@@ -1,4 +1,7 @@
 import React from "react";
+import PageHero from "../../components/sections/pageHero";
+import SectionHeader from "../../components/sections/header";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const contactItems = [
   {
@@ -6,7 +9,7 @@ const contactItems = [
     value: "123-456-7890",
     icon: (
       <svg
-        className="h-[18px] w-[18px]"
+        className="h-[24px] w-[24px]"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +27,7 @@ const contactItems = [
     value: "Consult@hotmail.com",
     icon: (
       <svg
-        className="h-[18px] w-[18px]"
+        className="h-[24px] w-[24px]"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -48,125 +51,102 @@ const contactItems = [
 
 const ContactUs = () => {
   return (
-    <main className="bg-[#f3f3f3] font-['Inter'] text-[#1f2937]">
-      <section
-        className="px-6 py-[44px] text-center"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(14,53,47,1) 0%, rgba(10,43,39,1) 55%, rgba(15,57,51,1) 100%)",
-        }}
-      >
-        <h1 className="font-['Poppins'] text-[46px] leading-none font-semibold text-white">
-          Contact
-        </h1>
-        <p className="mt-[10px] text-[12px] font-semibold tracking-[0.01em] text-white/90">
-          Recrute Sites
-          <span className="px-2 text-white/65" aria-hidden="true">
-            &gt;
-          </span>
-          Staffing Agency
-          <span className="px-2 text-white/65" aria-hidden="true">
-            &gt;
-          </span>
-          Contact
-        </p>
-      </section>
+    <main className="font-['Inter'] text-[#1f2937]">
+      <PageHero
+        title="Contact"
+        breadcrumbs={["Recrute Sites", "Staffing Agency", "Contact"]}
+      />
 
       <section className="px-6 pb-[34px] pt-[32px]">
-        <div className="mx-auto grid w-full max-w-[980px] grid-cols-1 gap-[22px] lg:grid-cols-[1fr_400px] lg:items-start lg:gap-[24px]">
-          <div className="pt-[28px]">
-            <span className="inline-flex h-[18px] items-center bg-[#f2e6d8] px-[8px] text-[10px] font-medium text-[#7a5f45]">
-              Contact Us
-            </span>
+        <div className="container">
+          <div className="flex w-full gap-[24px] lg:items-start lg:gap-[24px]">
+            <div className="pt-[28px] w-1/2">
+              <SectionHeader
+                type="Contact Us"
+                title="Get in Touch Lets Start the Conversation"
+                description="We are here to help you find the right staffing solutions for your needs. Whether you are a company looking to hire top talent or a candidate seeking your next career opportunity"
+                textAlign="start"
+              />
 
-            <h2 className="mt-[10px] max-w-[460px] font-['Poppins'] text-[42px] leading-[1.14] font-semibold tracking-[-0.01em] text-[#111827]">
-              Get in Touch Lets Start the Conversation
-            </h2>
+              <div className="mt-[12px] h-px w-full bg-[#d8d8d8]" />
 
-            <p className="mt-[10px] max-w-[458px] text-[11px] leading-[1.7] text-[#69707a]">
-              We are here to help you find the right staffing solutions for your needs.
-              Whether you are a company looking for top talent or a candidate seeking
-              your next career opportunity
-            </p>
-
-            <div className="mt-[12px] h-px w-full max-w-[460px] bg-[#d8d8d8]" />
-
-            <div className="mt-[14px] grid max-w-[460px] grid-cols-1 gap-y-[12px] sm:grid-cols-2 sm:gap-x-[28px]">
-              {contactItems.map((item) => (
-                <div key={item.label}>
-                  <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-[#f7eee4] text-[#d8ab7a]">
-                    {item.icon}
+              <div className="mt-[14px] flex w-full gap-[16px]">
+                {contactItems.map((item) => (
+                  <div key={item.label} className="w-1/2">
+                    <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[var(--vtc-bg-common-bg1)] text-[var(--vtc-bg-main-bg-1)]">
+                      {item.icon}
+                    </div>
+                    <p className="mt-[7px] text-[length:var(--f-fs-font-fs16)] leading-[1.4] text-[#636b75]">
+                      {item.label}
+                    </p>
+                    <p className="mt-[2px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] leading-[1.25] font-semibold text-[#111827]">
+                      {item.value}
+                    </p>
                   </div>
-                  <p className="mt-[7px] text-[11px] leading-[1.4] text-[#636b75]">
-                    {item.label}
-                  </p>
-                  <p className="mt-[2px] font-['Poppins'] text-[19px] leading-[1.25] font-semibold text-[#111827]">
-                    {item.value}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div>
-            <div className="bg-[#ececec] px-[16px] pt-[14px] pb-[12px]">
-              <h3 className="font-['Poppins'] text-[31px] leading-[1.15] font-semibold tracking-[-0.01em] text-[#111827]">
-                Send us a Message
-              </h3>
-              <p className="mt-[7px] max-w-[320px] text-[10px] leading-[1.65] text-[#6a7079]">
-                Feel free to reach out to us with any questions, inquiries, or
-                staffing requirements you may have. Our experienced
-              </p>
+            <div className="w-1/2">
+              <div className="bg-[var(--vtc-bg-common-bg2)] px-[16px] pt-[14px] pb-[12px]">
+                <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs32)] leading-[1.15] font-semibold tracking-[-0.01em] text-[#111827]">
+                  Send us a Message
+                </h3>
+                <p className="mt-[7px] text-[length:var(--f-fs-font-fs16)] leading-[1.65] text-[#6a7079]">
+                  Feel free to reach out to us with any questions, inquiries, or
+                  staffing requirements you may have. Our experienced
+                </p>
 
-              <form className="mt-[10px] space-y-[8px]">
-                <div className="grid grid-cols-1 gap-[8px] sm:grid-cols-2">
+                <form className="mt-[10px] space-y-[8px]">
+                  <div className="grid grid-cols-1 gap-[8px] sm:grid-cols-2">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-[8px] sm:grid-cols-2">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Phone Number"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    />
+                  </div>
+
                   <input
                     type="text"
-                    placeholder="First Name"
-                    className="h-[36px] w-full bg-[#dedede] px-[10px] text-[10px] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    placeholder="Subject"
+                    className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                   />
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    className="h-[36px] w-full bg-[#dedede] px-[10px] text-[10px] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+
+                  <textarea
+                    placeholder="Your Message"
+                    rows={3}
+                    className="h-[74px] w-full resize-none bg-[#E9E8E9] px-[10px] py-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                   />
-                </div>
 
-                <div className="grid grid-cols-1 gap-[8px] sm:grid-cols-2">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="h-[36px] w-full bg-[#dedede] px-[10px] text-[10px] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    className="h-[36px] w-full bg-[#dedede] px-[10px] text-[10px] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
-                  />
-                </div>
-
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="h-[36px] w-full bg-[#dedede] px-[10px] text-[10px] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
-                />
-
-                <textarea
-                  placeholder="Your Message"
-                  rows={3}
-                  className="h-[74px] w-full resize-none bg-[#dedede] px-[10px] py-[10px] text-[10px] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
-                />
-
-                <div className="flex justify-end pt-[4px]">
-                  <button
-                    type="button"
-                    className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-1 bg-[#f3a45f] px-[12px] font-['Poppins'] text-[10px] font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
-                  >
-                    Submit Now
-                    <span aria-hidden="true">↗</span>
-                  </button>
-                </div>
-              </form>
+                  <div className="flex justify-end pt-[4px]">
+                    <button
+                      type="button"
+                      className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-1 bg-[var(--vtc-bg-main-bg-1)] px-[12px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
+                    >
+                      Submit Now
+                      <FiArrowUpRight aria-hidden="true" />
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -176,7 +156,7 @@ const ContactUs = () => {
         <iframe
           title="London map"
           src="https://maps.google.com/maps?q=London&t=&z=11&ie=UTF8&iwloc=&output=embed"
-          className="h-[285px] w-full border-0"
+          className="h-[685px] w-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />

@@ -1,5 +1,11 @@
 import React from "react";
-import { FiArrowUpRight, FiMail, FiPhoneCall, FiCalendar, FiUser } from "react-icons/fi";
+import {
+  FiArrowUpRight,
+  FiMail,
+  FiPhoneCall,
+  FiCalendar,
+  FiUser,
+} from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineLightBulb, HiOutlineDocumentText } from "react-icons/hi";
 import {
@@ -32,9 +38,7 @@ const LandingPage = () => {
 
   return (
     <main className="bg-[#ffffff] font-['Inter'] text-[#1b2a28]">
-      <section
-        className="relative vikin-hero flex overflow-hidden px-6 pb-[6.9rem] pt-[7.2rem] lg:pb-[5.3rem] lg:pt-[6.2rem] md:pb-[4.4rem] md:pt-[5.8rem]"
-      >
+      <section className="relative vikin-hero flex overflow-hidden px-6 pb-[6.9rem] pt-[7.2rem] lg:pb-[5.3rem] lg:pt-[6.2rem] md:pb-[4.4rem] md:pt-[5.8rem]">
         <div className="container flex items-center">
           <div className="max-w-1/2">
             <span className="inline-flex rounded bg-white/15 px-[0.56rem] py-[0.17rem] text-[length:var(--f-fs-font-fs16)] text-white font-semibold tracking-[0.01em]">
@@ -102,10 +106,8 @@ const LandingPage = () => {
                     alt="Business meeting for staffing strategy"
                     className="block h-full w-full object-cover"
                   />
-                  <button className="video-buttton play-btn "
-                    type="button"
-                  >
-                    <a id="play-video play-btn" className="video-play-button" >
+                  <button className="video-buttton play-btn " type="button">
+                    <a id="play-video play-btn" className="video-play-button">
                       <span></span>
                     </a>
                   </button>
@@ -129,7 +131,9 @@ const LandingPage = () => {
                 <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
                   16+
                 </p>
-                <p className="mt-2 text-[18px] font-medium">Years of Experienced</p>
+                <p className="mt-2 text-[18px] font-medium">
+                  Years of Experienced
+                </p>
               </div>
             </div>
 
@@ -138,7 +142,9 @@ const LandingPage = () => {
                 <p className="font-['Poppins'] text-[length:var(--f-fs-font-fs40)] leading-none font-semibold">
                   1590+
                 </p>
-                <p className="mt-2 text-[length:var(--f-fs-font-fs16)] font-medium">Happy Clients</p>
+                <p className="mt-2 text-[length:var(--f-fs-font-fs16)] font-medium">
+                  Happy Clients
+                </p>
               </div>
               <img
                 src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
@@ -195,10 +201,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <button
-              type="button"
-              className="theme-btn6 mt-8"
-            >
+            <button type="button" className="theme-btn6 mt-8">
               <span>About Us</span>
               <FiArrowUpRight aria-hidden="true" />
             </button>
@@ -219,7 +222,11 @@ const LandingPage = () => {
         </span>
 
         <div className="relative mx-auto w-full max-w-[1312px]">
-          <SectionHeader type="Our Service" title="Temporary Staffing Services" description="With our proven track record and commitment to excellence, we re here to support your organization's growth and help you achieve" />
+          <SectionHeader
+            type="Our Service"
+            title="Temporary Staffing Services"
+            description="With our proven track record and commitment to excellence, we re here to support your organization's growth and help you achieve"
+          />
 
           <div className="mt-11 grid grid-cols-1 gap-4 lg:grid-cols-2">
             {[
@@ -270,7 +277,11 @@ const LandingPage = () => {
       </section>
 
       <section className="px-6 pb-[5.8rem] pt-[5.8rem] ">
-        <SectionHeader type="Case Studies" title="Elevate Your Talent Strategy" description="Our tailored services include talent acquisition, recruitment expertise, and industry-specific staffing solutions to help you build" />
+        <SectionHeader
+          type="Case Studies"
+          title="Elevate Your Talent Strategy"
+          description="Our tailored services include talent acquisition, recruitment expertise, and industry-specific staffing solutions to help you build"
+        />
 
         <div className="container">
           <div className="mt-12 grid w-full grid-cols-3 grid-rows-[210px_210px] gap-[18px]">
@@ -332,10 +343,7 @@ const LandingPage = () => {
                 we&apos;ve facilitated countless success stories, from small
                 businesses to Fortune 500 companies Our portfolio highlights.
               </p>
-              <button
-                type="button"
-                className="theme-btn6 mt-5"
-              >
+              <button type="button" className="theme-btn6 mt-5">
                 <span>See Plans</span>
                 <FiArrowUpRight aria-hidden="true" />
               </button>
@@ -360,15 +368,23 @@ const LandingPage = () => {
               <article key={`${item.title}-${index}`}>
                 <div className="flex items-center ">
                   <span className="relative text-[15px] inline-flex h-[44px] w-[44px] items-center justify-center text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="40" viewBox="0 0 56 40" fill="none">
-                      <path d="M0 4C0 1.79086 1.79086 0 4 0H33.7195C34.7204 0 35.6849 0.375212 36.4226 1.05157L52.9411 16.1956C54.612 17.7275 54.6773 20.3403 53.085 21.9537L36.4503 38.8097C35.6987 39.5713 34.6733 40 33.6032 40H4C1.79086 40 0 38.2091 0 36V4Z" fill="#FD965B">
-                      </path>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="56"
+                      height="40"
+                      viewBox="0 0 56 40"
+                      fill="none"
+                    >
+                      <path
+                        d="M0 4C0 1.79086 1.79086 0 4 0H33.7195C34.7204 0 35.6849 0.375212 36.4226 1.05157L52.9411 16.1956C54.612 17.7275 54.6773 20.3403 53.085 21.9537L36.4503 38.8097C35.6987 39.5713 34.6733 40 33.6032 40H4C1.79086 40 0 38.2091 0 36V4Z"
+                        fill="#FD965B"
+                      ></path>
                     </svg>
                     <span className="absolute top-1/2 left-[16px] -translate-x-1/2 -translate-y-1/2 text-[length:var(--f-fs-font-fs16)] leading-[1.2] font-semibold text-white">
                       {index + 1}
                     </span>
                   </span>
-                  <span className="h-[1px] w-full bg-[#f39f5a]" />
+                  <span className="h-[1px] w-full bg-[#fff]" />
                 </div>
                 <div className="pr-12">
                   <h3 className="mt-3 font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-white hover:text-[#fd965b]">
@@ -387,7 +403,12 @@ const LandingPage = () => {
       <section className="px-6 pb-[7rem] pt-[5.7rem]">
         <div className="container">
           <div className="flex items-center justify-between">
-            <SectionHeader type="Testimonial" title="Feedback from Satisfied Customers" description="We take pride in delivering exceptional staffing solutions that exceed our clients' expectations. But don't just take our word for it" textAlign="start" />
+            <SectionHeader
+              type="Testimonial"
+              title="Feedback from Satisfied Customers"
+              description="We take pride in delivering exceptional staffing solutions that exceed our clients' expectations. But don't just take our word for it"
+              textAlign="start"
+            />
 
             <div className="mt-6 flex gap-2 md:mt-[34px]">
               <button
@@ -428,9 +449,7 @@ const LandingPage = () => {
               </article>
 
               <div className="mt-10 flex items-center gap-4 pl-[6px]">
-                <figure
-                  className="h-12 w-12 rounded-full object-cover"
-                >
+                <figure className="h-12 w-12 rounded-full object-cover">
                   <img
                     src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
                     alt="Sujon M"
@@ -463,8 +482,8 @@ const LandingPage = () => {
                   “From startups seeking their first hires to established
                   corporations aiming to expand their teams, our tailored
                   staffing solutions have consistently exceeded expectations.
-                  With testimonials highlighting our ability to find the
-                  perfect , our tailored staffing solutions.”
+                  With testimonials highlighting our ability to find the perfect
+                  , our tailored staffing solutions.”
                 </p>
               </article>
 
@@ -492,8 +511,11 @@ const LandingPage = () => {
 
       <section className="bg-[#fffbec] px-6 pb-[7.2rem] pt-[5.8rem]">
         <div className="container">
-          <SectionHeader type="Our Service" title="Temporary Staffing Services" description="With our proven track record and commitment to excellence, we're here to support your organization's growth and help you achieve" />
-
+          <SectionHeader
+            type="Our Service"
+            title="Temporary Staffing Services"
+            description="With our proven track record and commitment to excellence, we're here to support your organization's growth and help you achieve"
+          />
 
           <div className="mx-auto mt-10 grid w-full max-w-[980px] gap-4 md:grid-cols-3">
             {[
@@ -528,7 +550,9 @@ const LandingPage = () => {
                   <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs22)] leading-[1.2] font-semibold text-[#131b2a]">
                     {member.name}
                   </h3>
-                  <p className="mt-1 text-[length:var(--f-fs-font-fs16)] text-[#737a82]">{member.role}</p>
+                  <p className="mt-1 text-[length:var(--f-fs-font-fs16)] text-[#737a82]">
+                    {member.role}
+                  </p>
                 </div>
               </article>
             ))}
@@ -585,9 +609,14 @@ const LandingPage = () => {
       </section>
 
       <section className="bg-[#fffbec] px-6 pb-[7.5rem] pt-[5.8rem]">
-        <div className="mx-auto grid w-full max-w-[1312px] items-start gap-8 lg:grid-cols-[1fr_600px]">
-          <div className="max-w-[640px] pt-2">
-            <SectionHeader type="Contact Us" title="Get in Touch Lets Start the Conversation" description="We are here to help you find the right staffing solutions for your needs. Whether you are a company looking to hire top talent or a candidate seeking your next career opportunity" textAlign="start" />
+        <div className="container flex w-full items-start gap-8">
+          <div className="w-1/2 pt-2">
+            <SectionHeader
+              type="Contact Us"
+              title="Get in Touch Lets Start the Conversation"
+              description="We are here to help you find the right staffing solutions for your needs. Whether you are a company looking to hire top talent or a candidate seeking your next career opportunity"
+              textAlign="start"
+            />
 
             <div className="mt-7 space-y-4">
               <article className="flex min-h-[88px] items-center gap-4 bg-white px-7">
@@ -595,8 +624,10 @@ const LandingPage = () => {
                   <FiPhoneCall />
                 </span>
                 <div>
-                  <p className="text-[14px] text-[#5f6670]">Gives us a Call</p>
-                  <p className="mt-1 font-['Poppins'] text-[33px] leading-none font-semibold text-[#111a29]">
+                  <p className="text-[length:var(--f-fs-font-fs16)] text-[#5f6670]">
+                    Gives us a Call
+                  </p>
+                  <p className="mt-1 font-['Poppins'] text-[length:var(--f-fs-font-18)] leading-none font-semibold text-[#111a29]">
                     123-456-7890
                   </p>
                 </div>
@@ -607,8 +638,10 @@ const LandingPage = () => {
                   <FiMail />
                 </span>
                 <div>
-                  <p className="text-[14px] text-[#5f6670]">Send me Mail</p>
-                  <p className="mt-1 font-['Poppins'] text-[33px] leading-none font-semibold text-[#111a29]">
+                  <p className="text-[length:var(--f-fs-font-fs16)] text-[#5f6670]">
+                    Send me Mail
+                  </p>
+                  <p className="mt-1 font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-none font-semibold text-[#111a29]">
                     Consult@hotmail.com
                   </p>
                 </div>
@@ -616,11 +649,11 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="bg-[#1b3e38] p-6 md:p-7">
-            <h3 className="font-['Poppins'] text-[38px] leading-[1.1] font-semibold text-white">
+          <div className="bg-[var(--vtc-bg-main-bg-4)] p-6 md:p-7 w-1/2">
+            <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs24)] leading-[1.1] font-semibold text-white">
               Send us a Message
             </h3>
-            <p className="mt-3 max-w-[500px] text-[14px] leading-[1.6] text-[#d0ddd9]">
+            <p className="mt-3 max-w-[500px] text-[length:var(--f-fs-font-fs16)] leading-[1.6] text-[#d0ddd9]">
               Feel free to reach out to us with any questions, inquiries, or
               staffing requirements you may have. Our experienced
             </p>
@@ -630,12 +663,12 @@ const LandingPage = () => {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="h-12 w-full bg-[#2e4c46] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
+                  className="h-12 w-full bg-[#394843] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="h-12 w-full bg-[#2e4c46] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
+                  className="h-12 w-full bg-[#394843] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
                 />
               </div>
 
@@ -643,25 +676,25 @@ const LandingPage = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="h-12 w-full bg-[#2e4c46] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
+                  className="h-12 w-full bg-[#394843] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="h-12 w-full bg-[#2e4c46] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
+                  className="h-12 w-full bg-[#394843] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
                 />
               </div>
 
               <input
                 type="text"
                 placeholder="Subject"
-                className="h-12 w-full bg-[#2e4c46] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
+                className="h-12 w-full bg-[#394843] px-4 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
               />
 
               <textarea
                 rows={4}
                 placeholder="You Message"
-                className="w-full resize-none bg-[#2e4c46] px-4 py-3 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
+                className="w-full resize-none bg-[#394843] px-4 py-3 text-[14px] text-white placeholder:text-[#b7c7c2] focus:outline-none"
               />
 
               <div className="pt-1 text-right">
@@ -679,21 +712,14 @@ const LandingPage = () => {
       </section>
 
       <section className="bg-[#efefef] px-6 pb-[7rem] pt-[5.8rem]">
-        <div className="mx-auto w-full max-w-[1312px]">
-          <div className="mx-auto max-w-[760px] text-center">
-            <span className="inline-flex h-[22px] items-center bg-[#dfe0e2] px-[10px] text-[10px] font-medium text-[#2d3542]">
-              Our Service
-            </span>
-            <h2 className="mt-4 font-['Poppins'] text-[53px] leading-[1.08] font-semibold tracking-[-0.02em] text-[#121a29]">
-              Temporary Staffing Services
-            </h2>
-            <p className="mx-auto mt-4 max-w-[740px] text-[16px] leading-[1.62] text-[#626a73]">
-              With our proven track record and commitment to excellence, we&apos;re
-              here to support your organization&apos;s growth and help you achieve
-            </p>
-          </div>
+        <div className="container">
+          <SectionHeader
+            type="Our Service"
+            title="Temporary Staffing Services"
+            description="With our proven track record and commitment to excellence, we're here to support your organization's growth and help you achieve"
+          />
 
-          <div className="mx-auto mt-9 grid w-full max-w-[980px] gap-6 md:grid-cols-2">
+          <div className="mt-9 flex gap-4">
             {[
               {
                 image:
@@ -710,7 +736,7 @@ const LandingPage = () => {
             ].map((post, idx) => (
               <article
                 key={`${post.date}-${idx}`}
-                className="relative min-h-[420px] overflow-hidden"
+                className="relative min-h-[420px] overflow-hidden w-1/2"
               >
                 <img
                   src={post.image}
@@ -721,27 +747,27 @@ const LandingPage = () => {
                 <div className="absolute right-0 bottom-4 left-[76px] bg-[#ededee] px-4 py-4">
                   <div className="flex items-center gap-6 text-[12px] text-[#6e737b]">
                     <span className="inline-flex items-center gap-1">
-                      <FiCalendar className="text-[12px]" />
+                      <FiCalendar className="text-[length:var(--f-fs-font-fs18)]" />
                       {post.date}
                     </span>
                     <span className="inline-flex items-center gap-1">
-                      <FiUser className="text-[12px]" />
+                      <FiUser className="text-[length:var(--f-fs-font-fs18)]" />
                       {post.author}
                     </span>
                   </div>
 
-                  <h3 className="mt-3 font-['Poppins'] text-[29px] leading-[1.22] font-semibold text-[#121a29]">
+                  <h3 className="mt-3 font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.22] font-semibold text-[#121a29]">
                     The Staffing Strategist Your Guide to Talent Acquisition
                   </h3>
 
-                  <p className="mt-3 border-b border-[#dfc3aa] pb-4 text-[14px] leading-[1.55] text-[#646b74]">
+                  <p className="mt-3 border-b border-[#dfc3aa] pb-4 text-[length:var(--f-fs-font-fs16)] leading-[1.55] text-[#646b74]">
                     Welcome to our blog, where we share valuable insights, tips,
                     and industry news to
                   </p>
 
                   <button
                     type="button"
-                    className="mt-3 inline-flex items-center gap-1 text-[14px] font-semibold text-[#121a29]"
+                    className="mt-3 inline-flex items-center gap-1 text-[length:var(--f-fs-font-fs16)] font-semibold text-[#121a29]"
                   >
                     <span>Read More</span>
                     <FiArrowUpRight aria-hidden="true" />
@@ -765,7 +791,6 @@ const LandingPage = () => {
           }
         `}
       </style>
-
     </main>
   );
 };

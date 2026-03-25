@@ -171,7 +171,7 @@ const AboutUs = () => {
                   alt="Project showcase"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute right-[16px] bottom-[16px] left-[16px] bg-[var(--vtc-bg-main-bg-1)] px-[14px] py-[16px] text-white rounded-[4px]">
+                <div className="absolute right-[16px] bottom-[16px] left-[16px] bg-[var(--primary-main)] px-[14px] py-[16px] text-white rounded-[4px]">
                   <p className="text-[length:var(--f-fs-font-fs16)] font-medium text-white/95">
                     Staffing Service
                   </p>
@@ -179,7 +179,7 @@ const AboutUs = () => {
                     <h3 className="max-w-[180px] font-['Poppins'] text-[length:var(--f-fs-font-fs24)] leading-[1.1] font-semibold">
                       Demonstrating Our Expertise
                     </h3>
-                    <span className="inline-flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-full bg-white text-[var(--vtc-bg-main-bg-1)]">
+                    <span className="inline-flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-full bg-white text-[var(--primary-main)]">
                       <FiArrowUpRight aria-hidden="true" />
                     </span>
                   </div>
@@ -231,7 +231,7 @@ const AboutUs = () => {
                     key={item.title}
                     className="flex items-start gap-[12px] bg-[#fff] px-[14px] py-[14px]"
                   >
-                    <span className="mt-[2px] inline-flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-[var(--vtc-bg-main-bg-1)] text-white">
+                    <span className="mt-[2px] inline-flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-[var(--primary-main)] text-white">
                       {item.icon}
                     </span>
                     <div>

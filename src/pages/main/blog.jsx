@@ -71,14 +71,14 @@ const BlogPage = () => {
 
                   <button
                     type="button"
-                    className="absolute top-1/2 left-[10px] inline-flex h-[60px] w-[60px] -translate-y-1/2 items-center justify-center rounded-full bg-[var(--vtc-bg-main-bg-1)] text-white"
+                    className="absolute top-1/2 left-[10px] inline-flex h-[60px] w-[60px] -translate-y-1/2 items-center justify-center rounded-full bg-[var(--primary-main)] text-white"
                     aria-label="Previous post image"
                   >
                     <FiChevronLeft className="h-[24px] w-[24px]" />
                   </button>
                   <button
                     type="button"
-                    className="absolute top-1/2 right-[10px] inline-flex h-[60px] w-[60px] -translate-y-1/2 items-center justify-center rounded-full bg-[var(--vtc-bg-main-bg-1)] text-white"
+                    className="absolute top-1/2 right-[10px] inline-flex h-[60px] w-[60px] -translate-y-1/2 items-center justify-center rounded-full bg-[var(--primary-main)] text-white"
                     aria-label="Next post image"
                   >
                     <FiChevronRight className="h-[24px] w-[24px]" />
@@ -115,7 +115,7 @@ const BlogPage = () => {
 
                   <button
                     type="button"
-                    className="mt-[10px] p-[28px] inline-flex h-[30px] items-center gap-[6px] bg-[var(--vtc-bg-main-bg-1)] px-[10px] text-[length:var(--f-fs-font-fs16)] font-semibold text-white"
+                    className="mt-[10px] p-[28px] inline-flex h-[30px] items-center gap-[6px] bg-[var(--primary-main)] px-[10px] text-[length:var(--f-fs-font-fs16)] font-semibold text-white"
                   >
                     Read More
                     <FiArrowRight aria-hidden="true" />

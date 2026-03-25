@@ -26,6 +26,12 @@ export const publicRouters = [
     isBottomNav: true,
   },
   {
+    path: "/services-details",
+    component: asyncComponent(() => import("../pages/main/servicePage/serviceDetails.jsx")),
+    isHeader: true,
+    isBottomNav: true,
+  },
+  {
     path: "/projects",
     component: asyncComponent(() => import("../pages/main/projects.jsx")),
     isHeader: true,

@@ -10,7 +10,7 @@
 
 .site-footer__newsletter {
   align-items: center;
-  background: var(--vtc-bg-main-bg-1);
+  background: var(--primary-main);
   border-radius: 4px;
   display: flex;
   overflow: hidden;
@@ -62,7 +62,7 @@
 .site-footer__newsletter-form input {
   background: rgba(255, 255, 255, 0.14);
   border: 0;
-  color: var(--vtc-text-heading-text-1);
+  color: var(--primary-text-1);
   flex: 1;
   font-size: var(--f-fs-font-fs16);
   height: 100%;
@@ -76,7 +76,7 @@
 
 .site-footer__newsletter-form button {
   align-items: center;
-  background: var(--vtc-bg-main-bg-1);
+  background: var(--primary-main);
   border: 0;
   color: #fff;
   cursor: pointer;

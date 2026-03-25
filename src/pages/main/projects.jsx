@@ -35,7 +35,7 @@ const ProjectsPage = () => {
                 loading="lazy"
               />
 
-              <div className="absolute right-[20px] bottom-[24px] left-[20px] bg-[var(--vtc-bg-main-bg-1)] px-[28px] py-[16px] text-white">
+              <div className="absolute right-[20px] bottom-[24px] left-[20px] bg-[var(--primary-main)] px-[28px] py-[16px] text-white">
                 <p className="text-[length:var(--f-fs-font-fs16)] font-medium text-white/90">
                   Staffing Service
                 </p>

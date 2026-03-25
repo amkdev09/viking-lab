@@ -37,84 +37,91 @@ const LandingPage = () => {
   ];
 
   return (
-    <main className="bg-[#ffffff] font-['Inter'] text-[#1b2a28]">
+    <main className="bg-[#ffffff] text-[#1b2a28]">
       <section className="relative vikin-hero flex overflow-hidden px-6 pb-[6.9rem] pt-[7.2rem] lg:pb-[5.3rem] lg:pt-[6.2rem] md:pb-[4.4rem] md:pt-[5.8rem]">
-        <div className="container flex items-center">
-          <div className="max-w-1/2">
-            <span className="inline-flex rounded bg-white/15 px-[0.56rem] py-[0.17rem] text-[length:var(--f-fs-font-fs16)] text-white font-semibold tracking-[0.01em]">
-              Staffing Power Your Success
-            </span>
+        <div className="container">
+          <main className="flex gap-1 pt-4.5">
+            <div className="max-w-1/2">
+              <span className="inline-flex rounded bg-white/15 px-[0.635rem] py-[0.285rem] text-base text-white tracking-[0.01em]">
+                Staffing Power Your Success
+              </span>
 
-            <h1 className="mt-[1.1rem] font-['Poppins'] text-[length:var(--f-fs-font-fs64)] leading-[1.09] font-semibold tracking-[-0.03em] text-white">
-              Growth Exceptional Talent Lets Build Success Together
-            </h1>
+              <h1 className="mt-[1.1rem] text-6xl text-white font-bold">
+                Growth Exceptional Talent Lets Build Success Together
+              </h1>
 
-            <p className="mt-[1.15rem] text-[length:var(--f-fs-font-fs18)] leading-[1.65] text-[var(--vtc-text-pera-text-2)]">
-              Our tailored staffing solutions streamline the hiring process
-              saving you time and resources while ensuring the perfect fit.
-            </p>
-
-            <div className="mt-[1.8rem] flex flex-wrap gap-[0.8rem]">
-              <button className="theme-btn6" type="button">
-                Start Your Search
-                <FiArrowUpRight aria-hidden="true" />
-              </button>
-              <button className="theme-btn7" type="button">
-                Discover More
-                <FiArrowUpRight aria-hidden="true" />
-              </button>
-            </div>
-
-            <div className="mt-[1.35rem]">
-              <p className="text-[length:var(--f-fs-font-fs18)] font-bold text-[#f4f6f6]">
-                Trusted By 5,789 Users
+              <p className="mt-[1.15rem] text-base leading-[1.65] text-[var(--primary-text-2)]">
+                Our tailored staffing solutions streamline the hiring process
+                saving you time and resources while ensuring the perfect fit.
               </p>
-              <p className="mt-[0.38rem] flex items-center gap-2 text-[#d7dfdc]">
-                <span className="inline-flex items-center gap-2 text-[length:var(--f-fs-font-fs14)] tracking-[0.12em] text-[#f6b41a]">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar className="text-[#d7dfdc]" />
-                </span>
-                <span>4K Happy Client</span>
-              </p>
-            </div>
-          </div>
 
-          <div className="w-1/2">
-            <div className="flex gap-4">
-              <article className="relative flex-1 overflow-hidden">
-                <img
-                  src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img1.png"
-                  alt="Team reviewing talent profiles together"
-                  className="object-contain"
-                />
-              </article>
-              <div className="flex flex-col gap-4">
-                <article className="relative overflow-hidden">
-                  <img
-                    src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img2.png"
-                    alt="Recruitment interview in progress"
-                    className="block h-full w-full object-cover"
-                  />
-                </article>
+              <div className="mt-[1.8rem] flex flex-wrap gap-[0.8rem]">
+                <button className="theme-btn6" type="button">
+                  Start Your Search
+                  <FiArrowUpRight aria-hidden="true" />
+                </button>
+                <button className="theme-btn7" type="button">
+                  Discover More
+                  <FiArrowUpRight aria-hidden="true" />
+                </button>
+              </div>
 
-                <article className="relative overflow-hidden">
-                  <img
-                    src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img3.png"
-                    alt="Business meeting for staffing strategy"
-                    className="block h-full w-full object-cover"
-                  />
-                  <button className="video-buttton play-btn " type="button">
-                    <a id="play-video play-btn" className="video-play-button">
-                      <span></span>
-                    </a>
-                  </button>
-                </article>
+              <div className="mt-[1.1rem]">
+                <p className="text-lg font-bold text-white">
+                  Trusted By 5,789 Users
+                </p>
+                <p className="flex mt-[0.38rem] text-white/90">
+                  <span className="flex gap-[6px] items-center text-[var(--color-yellow)] text-base">
+                    <FaStar className="text-[18px]" />
+                    <FaStar className="text-[18px]" />
+                    <FaStar className="text-[18px]" />
+                    <FaStar className="text-[18px]" />
+                    <FaStar className="text-[18px] text-[#d7dfdc]" />
+                  </span>
+                  <span className="block ml-1 text-lg">4K Happy Client</span>
+                </p>
               </div>
             </div>
-          </div>
+            <div className="w-1/2">
+              <div className="flex gap-1">
+                <article className="relative flex-1 overflow-hidden">
+                  <figure className="h-full">
+                    <img
+                      src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img1.png"
+                      alt="Team reviewing talent profiles together"
+                      className="object-contain"
+                    />
+                  </figure>
+                </article>
+                <div className="flex flex-col gap-1">
+                  <article className="relative overflow-hidden h-full">
+                    <figure className="h-full">
+                      <img
+                        src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img2.png"
+                        alt="Recruitment interview in progress"
+                        className="object-contain"
+                      />
+                    </figure>
+                  </article>
+
+                  <article className="relative overflow-hidden">
+                    <figure>
+                      <img
+                        src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img3.png"
+                        alt="Business meeting for staffing strategy"
+                        className="object-contain"
+                      />
+                    </figure>
+                    <button className="video-buttton play-btn " type="button">
+                      <a id="play-video play-btn" className="video-play-button">
+                        <span></span>
+                      </a>
+                    </button>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
       </section>
 
@@ -649,7 +656,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="bg-[var(--vtc-bg-main-bg-4)] p-6 md:p-7 w-1/2">
+          <div className="bg-[var(--primary-main-1)] p-6 md:p-7 w-1/2">
             <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs24)] leading-[1.1] font-semibold text-white">
               Send us a Message
             </h3>

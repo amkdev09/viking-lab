@@ -4,12 +4,15 @@
   position: fixed;
   right: 0;
   top: 0;
-  transition: background-color .25s ease, box-shadow .25s ease, padding .25s ease;
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    padding 0.25s ease;
   z-index: 1000;
 }
 
 .site-header.is-scrolled {
-  background-color: #44524D;
+  background-color: #44524d;
   box-shadow: 0 10px 24px rgba(9, 24, 21, 0.24);
 }
 
@@ -37,10 +40,7 @@
   height: 36px;
 }
 .site-header__brand-text {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: var(--text-2xl);
 }
 
 .site-header__nav {
@@ -104,28 +104,27 @@
 .site-header__dropdown-link {
   color: #121a29;
   display: block;
-  font-family: "Inter", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 500;
+  font-size: var(--text-base);
   padding: 0.65rem 1.1rem;
+  border-left: 4px solid transparent;
   text-decoration: none;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition:
+    color 0.25s ease-in-out,
+    border-left 0.25s ease-in-out;
   white-space: nowrap;
 }
 
 .site-header__dropdown-link:hover {
-  background-color: #f5f6f7;
+  color: var(--primary-main);
+  border-left: 4px solid var(--primary-main);
 }
 
 .site-header__link {
   color: #f2f5f4;
-  font-family: "Inter", sans-serif;
-  font-size: var(--f-fs-font-fs16);
-  font-weight: 500;
-  line-height: 1;
-  margin: 0 0.85rem;
+  font-size: var(--text-base);
+  padding: 8px 15px;
   text-decoration: none;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
   white-space: nowrap;
 }
 
@@ -142,13 +141,11 @@
   cursor: pointer;
   display: inline-flex;
   flex-shrink: 0;
-  font-family: "Inter", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: var(--text-base);
   gap: 0.35rem;
   line-height: 1;
   padding: 0.75rem 1.15rem;
-  transition: background-color .2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .site-header__button:hover {

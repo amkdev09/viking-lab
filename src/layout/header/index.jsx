@@ -26,7 +26,7 @@ const navLinks = [
     ]
   },
   {
-    label: "Pages", to: "/pages", menuItem: [
+    label: "Pages", menuItem: [
       { label: "About Us", to: "/about-us" },
       { label: "Our Team", to: "/our-team" },
       { label: "Testimonials", to: "/testimonials" },

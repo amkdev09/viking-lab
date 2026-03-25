@@ -73,7 +73,7 @@ const ContactUs = () => {
               <div className="mt-[14px] flex w-full gap-[16px]">
                 {contactItems.map((item) => (
                   <div key={item.label} className="w-1/2">
-                    <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[var(--vtc-bg-common-bg1)] text-[var(--vtc-bg-main-bg-1)]">
+                    <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[var(--vtc-bg-common-bg1)] text-[var(--primary-main)]">
                       {item.icon}
                     </div>
                     <p className="mt-[7px] text-[length:var(--f-fs-font-fs16)] leading-[1.4] text-[#636b75]">
@@ -139,7 +139,7 @@ const ContactUs = () => {
                   <div className="flex justify-end pt-[4px]">
                     <button
                       type="button"
-                      className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-1 bg-[var(--vtc-bg-main-bg-1)] px-[12px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
+                      className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-1 bg-[var(--primary-main)] px-[12px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
                     >
                       Submit Now
                       <FiArrowUpRight aria-hidden="true" />

@@ -36,14 +36,14 @@ const ProjectsPage = () => {
               />
 
               <div className="absolute right-[20px] bottom-[24px] left-[20px] bg-[var(--primary-main)] px-[28px] py-[16px] text-white">
-                <p className="text-[length:var(--f-fs-font-fs16)] font-medium text-white/90">
+                <p className="text-base font-medium text-white/90">
                   Staffing Service
                 </p>
                 <div className="mt-[4px] flex items-center justify-between gap-3">
-                  <h3 className="max-w-[155px] text-[length:var(--f-fs-font-fs22)] leading-[1.25] font-semibold">
+                  <h3 className="max-w-[155px] text-2xl leading-[1.25] font-semibold">
                     Demonstrating Our Expertise
                   </h3>
-                  <span className="inline-flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full bg-white text-[length:var(--f-fs-font-fs16)] text-[#f39f5a]">
+                  <span className="inline-flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full bg-white text-base text-[#f39f5a]">
                     <FiArrowUpRight aria-hidden="true" />
                   </span>
                 </div>

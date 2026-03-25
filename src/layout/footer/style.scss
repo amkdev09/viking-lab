@@ -36,7 +36,7 @@
 .site-footer__newsletter-content h2 {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: var(--f-fs-font-fs44);
+  font-size: var(--text-5xl);
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.06;
@@ -45,7 +45,7 @@
 
 .site-footer__newsletter-content p {
   color: rgba(255, 255, 255, 0.74);
-  font-size: var(--f-fs-font-fs16);
+  font-size: var(--text-base);
   line-height: 1.45;
   margin: 14px 0 20px;
 }
@@ -64,7 +64,7 @@
   border: 0;
   color: var(--primary-text-1);
   flex: 1;
-  font-size: var(--f-fs-font-fs16);
+  font-size: var(--text-base);
   height: 100%;
   outline: 0;
   padding: 0 14px;
@@ -81,7 +81,7 @@
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-size: var(--f-fs-font-fs16);
+  font-size: var(--text-base);
   font-weight: 700;
   gap: 6px;
   height: 100%;
@@ -110,7 +110,7 @@
 .site-footer__grid h3 {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: var(--f-fs-font-fs20);
+  font-size: var(--text-lg);
   font-weight: 600;
   margin: 0 0 18px;
 }
@@ -121,7 +121,7 @@
 
 .site-footer__about p {
   color: #c2d3ce;
-  font-size: var(--f-fs-font-fs18);
+  font-size: var(--text-lg);
   line-height: 1.62;
   margin: 0 0 26px;
 }
@@ -137,7 +137,7 @@
   border-radius: 999px;
   color: #fff;
   display: inline-flex;
-  font-size: var(--f-fs-font-fs16);
+  font-size: var(--text-base);
   height: 32px;
   justify-content: center;
   text-decoration: none;
@@ -155,7 +155,7 @@
 .site-footer__grid li,
 .site-footer__grid a {
   color: #ccdbd6;
-  font-size: var(--f-fs-font-fs16);
+  font-size: var(--text-base);
   line-height: 1.45;
   text-decoration: none;
 }
@@ -173,7 +173,7 @@
 
 .site-footer__contact li svg {
   color: #f0f5f3;
-  font-size: var(--f-fs-font-fs18);
+  font-size: var(--text-lg);
   margin-top: 3px;
 }
 
@@ -184,18 +184,25 @@
 
 .site-footer__bottom p {
   color: #d6e2df;
-  font-size: var(--f-fs-font-fs16);
+  font-size: var(--text-base);
   margin: 0;
   text-align: center;
 }
 
 @media (max-width: 992px) {
   .site-footer__newsletter {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    height: auto;
   }
 
   .site-footer__newsletter-image {
     max-height: 280px;
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .site-footer__newsletter-content {
+    width: 100% !important;
   }
 
   .site-footer__main {
@@ -219,7 +226,7 @@
   }
 
   .site-footer__newsletter-content h2 {
-    font-size: var(--f-fs-font-fs30);
+    font-size: var(--text-3xl);
   }
 
   .site-footer__grid {

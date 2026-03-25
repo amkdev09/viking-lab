@@ -68,33 +68,33 @@ const JobsPage = () => {
               key={`${job.company}-${job.role}`}
               className="rounded-[8px] border border-[#d8d8d8] px-[16px] pt-[16px] pb-[12px]"
             >
-              <span className="inline-flex h-[32px] items-center rounded-[4px] bg-[var(--vtc-bg-common-bg1)] px-[10px] text-[length:var(--f-fs-font-fs16)] font-medium text-[#3d3d3d]">
+              <span className="inline-flex h-[32px] items-center rounded-[4px] bg-[var(--vtc-bg-common-bg1)] px-[10px] text-base font-medium text-[#3d3d3d]">
                 {job.type}
               </span>
 
-              <p className="mt-[16px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] leading-[1.1] font-semibold text-[#111827]">
+              <p className="mt-[16px] font-['Poppins'] text-base leading-[1.1] font-semibold text-[#111827]">
                 {job.company}
               </p>
-              <p className="mt-[4px] text-[length:var(--f-fs-font-fs16)] leading-[1.2] text-[#6b7280]">
+              <p className="mt-[4px] text-base leading-[1.2] text-[#6b7280]">
                 {job.location}
               </p>
 
               <div className="mt-[16px] h-px w-full bg-[#d4d4d4]" />
 
-              <p className="mt-[15px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] leading-[1.12] font-semibold text-[#111827]">
+              <p className="mt-[15px] font-['Poppins'] text-base leading-[1.12] font-semibold text-[#111827]">
                 {job.role}
               </p>
-              <p className="mt-[6px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] leading-none font-medium text-[#f3a164]">
+              <p className="mt-[6px] font-['Poppins'] text-base leading-none font-medium text-[#f3a164]">
                 {job.salary}
               </p>
-              <p className="mt-[18px] text-[length:var(--f-fs-font-fs16)] text-[#6e7581]">{job.posted}</p>
+              <p className="mt-[18px] text-base text-[#6e7581]">{job.posted}</p>
 
               <button
                 type="button"
-                className="mt-[12px] inline-flex h-[42px] min-w-[126px] items-center justify-center gap-[6px] rounded-[4px] border border-[#d7b795] bg-[#f8f3ec] px-[15px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] font-medium text-[#0f172a]"
+                className="mt-[12px] inline-flex h-[42px] min-w-[126px] items-center justify-center gap-[6px] rounded-[4px] border border-[#d7b795] bg-[#f8f3ec] px-[15px] font-['Poppins'] text-base font-medium text-[#0f172a]"
               >
                 Job Details
-                <FiArrowUpRight aria-hidden="true" className="text-[length:var(--f-fs-font-fs16)]" />
+                <FiArrowUpRight aria-hidden="true" className="text-base" />
               </button>
             </article>
           ))}

@@ -59,8 +59,8 @@ const ContactUs = () => {
 
       <section className="px-6 pb-[34px] pt-[32px]">
         <div className="container">
-          <div className="flex w-full gap-[24px] lg:items-start lg:gap-[24px]">
-            <div className="pt-[28px] w-1/2">
+          <div className="flex w-full flex-col gap-[24px] lg:items-start lg:flex-row lg:gap-[24px]">
+            <div className="pt-[28px] w-full lg:w-1/2">
               <SectionHeader
                 type="Contact Us"
                 title="Get in Touch Lets Start the Conversation"
@@ -76,10 +76,10 @@ const ContactUs = () => {
                     <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[var(--vtc-bg-common-bg1)] text-[var(--primary-main)]">
                       {item.icon}
                     </div>
-                    <p className="mt-[7px] text-[length:var(--f-fs-font-fs16)] leading-[1.4] text-[#636b75]">
+                    <p className="mt-[7px] text-base leading-[1.4] text-[#636b75]">
                       {item.label}
                     </p>
-                    <p className="mt-[2px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] leading-[1.25] font-semibold text-[#111827]">
+                    <p className="mt-[2px] font-['Poppins'] text-base leading-[1.25] font-semibold text-[#111827]">
                       {item.value}
                     </p>
                   </div>
@@ -87,12 +87,12 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2">
               <div className="bg-[var(--vtc-bg-common-bg2)] px-[16px] pt-[14px] pb-[12px]">
-                <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs32)] leading-[1.15] font-semibold tracking-[-0.01em] text-[#111827]">
+                <h3 className="font-['Poppins'] text-3xl leading-[1.15] font-semibold tracking-[-0.01em] text-[#111827]">
                   Send us a Message
                 </h3>
-                <p className="mt-[7px] text-[length:var(--f-fs-font-fs16)] leading-[1.65] text-[#6a7079]">
+                <p className="mt-[7px] text-base leading-[1.65] text-[#6a7079]">
                   Feel free to reach out to us with any questions, inquiries, or
                   staffing requirements you may have. Our experienced
                 </p>
@@ -102,12 +102,12 @@ const ContactUs = () => {
                     <input
                       type="text"
                       placeholder="First Name"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                     />
                     <input
                       type="text"
                       placeholder="Last Name"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                     />
                   </div>
 
@@ -115,31 +115,31 @@ const ContactUs = () => {
                     <input
                       type="email"
                       placeholder="Email"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                     />
                     <input
                       type="text"
                       placeholder="Phone Number"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                     />
                   </div>
 
                   <input
                     type="text"
                     placeholder="Subject"
-                    className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                   />
 
                   <textarea
                     placeholder="Your Message"
                     rows={3}
-                    className="h-[74px] w-full resize-none bg-[#E9E8E9] px-[10px] py-[10px] text-[length:var(--f-fs-font-fs16)] text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    className="h-[74px] w-full resize-none bg-[#E9E8E9] px-[10px] py-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
                   />
 
                   <div className="flex justify-end pt-[4px]">
                     <button
                       type="button"
-                      className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-1 bg-[var(--primary-main)] px-[12px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
+                      className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-0.5 bg-[var(--primary-main)] px-[12px] font-['Poppins'] text-base font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
                     >
                       Submit Now
                       <FiArrowUpRight aria-hidden="true" />
@@ -156,7 +156,7 @@ const ContactUs = () => {
         <iframe
           title="London map"
           src="https://maps.google.com/maps?q=London&t=&z=11&ie=UTF8&iwloc=&output=embed"
-          className="h-[685px] w-full border-0"
+          className="h-[520px] sm:h-[600px] md:h-[685px] w-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />

@@ -7,100 +7,90 @@ import SectionHeader from "../../components/sections/header";
 
 const AboutUs = () => {
   return (
-    <main className="bg-white font-['Inter'] text-[#0f1720]">
+    <main className="bg-white text-[#0f1720]">
       <PageHero
         title="About Us"
         breadcrumbs={["Recrute Sites", "Staffing Agency", "About Us"]}
       />
 
-      <section className="px-6 py-[6.2rem]">
-        <div className="container flex gap-4">
-          <div className="flex w-1/2 gap-4">
-            <div className="flex w-1/2 flex-col gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=760&q=80"
-                alt="Business people discussing work"
-                className="w-full object-cover"
-              />
-              <div className="bg-[#173a33] px-6 pt-5 text-white py-5">
-                <p className="font-['Poppins'] text-[40px] leading-none font-semibold">
-                  16+
-                </p>
-                <p className="mt-2 text-[18px] font-medium">
-                  Years of Experienced
-                </p>
-              </div>
-            </div>
-
-            <div className="flex w-1/2 flex-col gap-4">
-              <div className="bg-[#f29459] px-6 pt-5 text-white md:mt-0 py-5">
-                <p className="font-['Poppins'] text-[length:var(--f-fs-font-fs40)] leading-none font-semibold">
-                  1590+
-                </p>
-                <p className="mt-2 text-[length:var(--f-fs-font-fs16)] font-medium">
-                  Happy Clients
-                </p>
-              </div>
-              <img
-                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
-                alt="Recruiter portrait"
-                className="w-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="w-1/2 p-1">
-            <span className="inline-flex h-[24px] items-center bg-[#dcddde] px-3 text-[12px] font-medium text-[#2d3542]">
-              About Us
-            </span>
-
-            <h2 className="mt-4 font-['Poppins'] text-[length:var(--f-fs-font-fs44)] leading-[1.08] font-semibold tracking-[-0.02em] text-[#131c2a]">
-              Our Story Connecting Talent, Powering Success
-            </h2>
-
-            <p className="mt-4 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5e646e]">
-              Our team of industry experts is dedicated to understanding your
-              unique needs and delivering tailored solutions that propel your
-              business forward.
-            </p>
-
-            <div className="mt-6 space-y-5">
-              <div className="flex gap-4">
-                <span className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#ece7df] text-[#d1844d]">
-                  <HiOutlineLightBulb className="text-[22px]" />
-                </span>
-                <div>
-                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-[#141c2a]">
-                    Empowering Careers, Driving Growth
-                  </h3>
-                  <p className="mt-1 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5f656f]">
-                    we are your strategic partner in talent acquisition. With a
-                    steadfast commitment to excellence
+      <section className="pt-[56px] pb-[56px] sm:pt-[70px] sm:pb-[70px] md:pt-[80px] md:pb-[80px]">
+        <div className="container">
+          <main className="flex flex-col md:flex-row gap-8">
+            <div className="flex w-full md:w-1/2 gap-8 flex-col sm:flex-row">
+              <div className="flex w-full sm:w-1/2 flex-col gap-8">
+                <figure className="w-full flex-1 aspect-square rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=760&q=80"
+                    alt="Business people discussing work"
+                  />
+                </figure>
+                <div className="bg-[var(--primary-main-1)] p-8 text-white rounded-lg">
+                  <p className="text-4xl leading-none font-bold">16+</p>
+                  <p className="mt-4 text-lg font-medium">
+                    Years of Experienced
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <span className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#ece7df] text-[#d1844d]">
-                  <HiOutlineDocumentText className="text-[length:var(--f-fs-font-fs22)]" />
-                </span>
-                <div>
-                  <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs18)] leading-[1.2] font-semibold text-[#141c2a]">
-                    Leaders in Staffing Excellence
-                  </h3>
-                  <p className="mt-1 text-[length:var(--f-fs-font-fs18)] leading-[1.55] text-[#5f656f]">
-                    Discover the difference with Your Agency Name and unlock new
-                    possibilities for growth
-                  </p>
+              <div className="flex w-full sm:w-1/2 flex-col gap-8">
+                <div className="bg-[var(--primary-main)] p-8 text-white rounded-lg">
+                  <p className="text-4xl leading-none font-bold">1590+</p>
+                  <p className="mt-1 text-lg font-medium">Happy Clients</p>
                 </div>
+                <img
+                  src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=760&q=80"
+                  alt="Recruiter portrait"
+                  className="w-full object-cover rounded-lg"
+                />
               </div>
             </div>
 
-            <button type="button" className="theme-btn6 mt-8">
-              <span>About Us</span>
-              <FiArrowUpRight aria-hidden="true" />
-            </button>
-          </div>
+            <div className="w-full md:w-1/2 p-1 mt-4 md:mt-0">
+              <SectionHeader
+                type="About Us"
+                title="Our Story Connecting Talent, Powering Success"
+                description="Our team of industry experts is dedicated to understanding your unique needs and delivering tailored solutions that propel your business forward."
+                textAlign="start"
+              />
+
+              <div className="mt-8 space-y-8">
+                <div className="flex gap-[6px]">
+                  <span className="inline-flex w-16 h-16 shrink-0 items-center justify-center rounded-full bg-[var(--primary-text-bg)] text-[var(--primary-main)]">
+                    <HiOutlineLightBulb className="text-2xl" />
+                  </span>
+                  <div>
+                    <h3 className="text-lg leading-[1.2] font-bold text-[#141c2a]">
+                      Empowering Careers, Driving Growth
+                    </h3>
+                    <p className="mt-4 text-base leading-[1.55] text-[#5f656f]">
+                      we are your strategic partner in talent acquisition. With
+                      a steadfast commitment to excellence
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-[6px]">
+                  <span className="inline-flex w-16 h-16 shrink-0 items-center justify-center rounded-full bg-[var(--primary-text-bg)] text-[var(--primary-main)]">
+                    <HiOutlineDocumentText className="text-2xl" />
+                  </span>
+                  <div>
+                    <h3 className="text-lg leading-[1.2] font-bold text-[#141c2a]">
+                      Leaders in Staffing Excellence
+                    </h3>
+                    <p className="mt-4 text-base leading-[1.55] text-[#5f656f]">
+                      Discover the difference with Your Agency Name and unlock
+                      new possibilities for growth
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" className="theme-btn6 mt-8">
+                <span>About Us</span>
+                <FiArrowUpRight aria-hidden="true" />
+              </button>
+            </div>
+          </main>
         </div>
       </section>
 
@@ -139,7 +129,7 @@ const AboutUs = () => {
           <div className="mt-[30px] flex justify-center">
             <button
               type="button"
-              className="inline-flex h-[44px] items-center gap-[8px] bg-[#ed9d5f] px-[18px] font-['Poppins'] text-[length:var(--f-fs-font-fs16)] font-medium text-white transition-colors duration-200 hover:bg-[#e58f49]"
+              className="inline-flex h-[44px] items-center gap-[8px] bg-[var(--primary-main)] px-[18px] text-base font-bold text-white transition-colors duration-200 hover:bg-[#e58f49]"
             >
               Explore More Services
               <FiArrowUpRight aria-hidden="true" />
@@ -172,11 +162,11 @@ const AboutUs = () => {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute right-[16px] bottom-[16px] left-[16px] bg-[var(--primary-main)] px-[14px] py-[16px] text-white rounded-[4px]">
-                  <p className="text-[length:var(--f-fs-font-fs16)] font-medium text-white/95">
+                  <p className="text-base font-medium text-white/95">
                     Staffing Service
                   </p>
                   <div className="mt-[4px] flex items-center justify-between gap-3">
-                    <h3 className="max-w-[180px] font-['Poppins'] text-[length:var(--f-fs-font-fs24)] leading-[1.1] font-semibold">
+                    <h3 className="max-w-[180px] text-2xl leading-[1.1] font-bold">
                       Demonstrating Our Expertise
                     </h3>
                     <span className="inline-flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-full bg-white text-[var(--primary-main)]">
@@ -192,8 +182,8 @@ const AboutUs = () => {
 
       <section className="bg-[#F5F3F4] px-6 py-[100px]">
         <div className="container">
-          <div className="flex w-full gap-[24px] lg:items-start">
-            <article className="h-[580px] overflow-hidden rounded-[4px] w-1/2">
+          <div className="flex w-full flex-col lg:flex-row gap-[24px] lg:items-start">
+            <article className="h-[580px] overflow-hidden rounded-[4px] w-full lg:w-1/2">
               <img
                 src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=1100&q=80"
                 alt="Recruitment team using technology"
@@ -201,7 +191,7 @@ const AboutUs = () => {
               />
             </article>
 
-            <div className="pt-[6px] w-1/2">
+            <div className="pt-[6px] w-full lg:w-1/2">
               <SectionHeader
                 type="Recruitment Technologies"
                 title="Solving Recruitment Using Technology"
@@ -214,17 +204,17 @@ const AboutUs = () => {
                   {
                     title: "Sourcing the Best",
                     text: "Stay tuned for regular updates and valuable insights from our team of staffing experts.",
-                    icon: <RiUserSearchLine className="text-[20px]" />,
+                    icon: <RiUserSearchLine className="text-xl" />,
                   },
                   {
                     title: "Volume Hiring",
                     text: "Remember to keep your blog content informative, engaging, and relevant to your target audience",
-                    icon: <RiTeamLine className="text-[20px]" />,
+                    icon: <RiTeamLine className="text-xl" />,
                   },
                   {
                     title: "Partners in Team Building",
                     text: "This will help drive traffic to your website & establish your agency as a trusted authority",
-                    icon: <RiGroupLine className="text-[20px]" />,
+                    icon: <RiGroupLine className="text-xl" />,
                   },
                 ].map((item) => (
                   <article
@@ -235,10 +225,10 @@ const AboutUs = () => {
                       {item.icon}
                     </span>
                     <div>
-                      <h3 className="font-['Poppins'] text-[length:var(--f-fs-font-fs20)] leading-[1.2] font-semibold text-[#111827]">
+                      <h3 className="text-xl leading-[1.2] font-bold text-[#111827]">
                         {item.title}
                       </h3>
-                      <p className="mt-[4px] text-[length:var(--f-fs-font-fs16)] leading-[1.6] text-[#6a717b]">
+                      <p className="mt-[4px] text-base leading-[1.6] text-[#6a717b]">
                         {item.text}
                       </p>
                     </div>
@@ -269,10 +259,10 @@ const AboutUs = () => {
                 className="flex h-[300px] items-end justify-center bg-[#ececec] px-6 pb-[14px] text-center"
               >
                 <div>
-                  <h3 className="font-['Poppins'] text-[31px] leading-[1.2] font-semibold text-[#111827]">
+                  <h3 className="text-3xl leading-[1.2] font-bold text-[#111827]">
                     {member.name}
                   </h3>
-                  <p className="mt-[5px] text-[16px] text-[#6c727c]">
+                  <p className="mt-[5px] text-base text-[#6c727c]">
                     {member.role}
                   </p>
                 </div>
@@ -295,14 +285,14 @@ const AboutUs = () => {
             <div className="mb-[4px] flex items-center gap-[8px]">
               <button
                 type="button"
-                className="inline-flex h-[34px] w-[34px] items-center justify-center bg-[#efe4d7] text-[16px] text-[#232a35]"
+                className="inline-flex h-[34px] w-[34px] items-center justify-center bg-[#efe4d7] text-base text-[#232a35]"
                 aria-label="Previous testimonials"
               >
                 ←
               </button>
               <button
                 type="button"
-                className="inline-flex h-[34px] w-[34px] items-center justify-center bg-[#efe4d7] text-[16px] text-[#232a35]"
+                className="inline-flex h-[34px] w-[34px] items-center justify-center bg-[#efe4d7] text-base text-[#232a35]"
                 aria-label="Next testimonials"
               >
                 →
@@ -330,18 +320,18 @@ const AboutUs = () => {
                 className="flex items-stretch justify-between gap-[10px] bg-[#fff] px-[16px] py-[16px]"
               >
                 <div className="max-w-[290px]">
-                  <p className="text-[length:var(--f-fs-font-fs16)] tracking-[0.08em] text-[#f39f5a]">
+                  <p className="text-base tracking-[0.08em] text-[#f39f5a]">
                     ★★★★★
                   </p>
-                  <p className="mt-[7px] text-[length:var(--f-fs-font-fs16)] leading-[1.6] text-[#4d5562]">
+                  <p className="mt-[7px] text-base leading-[1.6] text-[#4d5562]">
                     &quot;But don&apos;t just take our word for it-hear what our
                     satisfied clients have to say. From Fortune 500 companies to
                     small&quot;
                   </p>
-                  <h3 className="mt-[8px] font-['Poppins'] text-[length:var(--f-fs-font-fs24)] leading-[1.2] font-semibold text-[#111827]">
+                  <h3 className="mt-[8px] text-2xl leading-[1.2] font-bold text-[#111827]">
                     {item.name}
                   </h3>
-                  <p className="mt-[3px] text-[length:var(--f-fs-font-fs16)] text-[#6b7280]">
+                  <p className="mt-[3px] text-base text-[#6b7280]">
                     {item.role}
                   </p>
                 </div>

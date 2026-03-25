@@ -8,6 +8,13 @@
   src: url(./assets/fonts/Figtree-SemiBold.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Figtree-Bold';
+  font-display: swap;
+  src: url(./assets/fonts/Figtree-Bold.ttf) format('truetype');
+}
+
+
 html,
 body {
   touch-action: pan-x pan-y;
@@ -20,6 +27,8 @@ body {
   --primary-main-1: #23342E;
   --primary-text-1: #081120;
   --primary-text-2: #CCCCD5;
+  --primary-text-bg: #E9EBEA;
+  --primary-text-bg-1: #FFF4EF;
 
   --color-black: #000;
   --color-white: #fff;
@@ -53,8 +62,9 @@ body {
   --tracking-wider: .05em;
   --tracking-widest: .1em;
   --leading-relaxed: 1.625;
-  --default-font-family: var(--font-sans);
-  --default-mono-font-family: var(--font-mono);
+  --default-font-family: 'Figtree', sans-serif;
+  --default-mono-font-family: 'Figtree', sans-serif;
+  --font-bold: 'Figtree-Bold', sans-serif;
 
   --shadow-soft: 0 10px 28px rgba(17, 56, 47, 0.09);
   --shadow-card: 0 8px 20px rgba(16, 38, 32, 0.08);

@@ -38,7 +38,7 @@ const LandingPage = () => {
 
   return (
     <main className="bg-[#ffffff] text-[#1b2a28]">
-      <section className="relative vikin-hero pt-[max(5.25rem,env(safe-area-inset-top,0px)+3.75rem)] sm:pt-[4.5rem] md:pt-[5rem] lg:pt-[4.25rem] xl:pt-[5rem]">
+      <section className="relative vikin-hero pt-[max(5.25rem,env(safe-area-inset-top,0px)+6.75rem)] sm:pt-[4.5rem] md:pt-[5rem] lg:pt-[4.25rem] xl:pt-[5rem]">
         <div className="container w-full">
           <div className="flex w-full flex-col items-stretch gap-8 md:flex-row md:items-start md:gap-6 lg:gap-8 xl:gap-10">
             <div className="w-full min-w-0 md:max-w-[50%] md:flex-1 lg:pt-2">

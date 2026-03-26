@@ -145,6 +145,10 @@ img {
   border-radius: 4px;
   margin-left: 20px;
   transition: all 0.4s;
+
+  @media (max-width: 1170px) {
+    margin-left: 0;
+  }
 }
 
 .theme-btn7:hover {

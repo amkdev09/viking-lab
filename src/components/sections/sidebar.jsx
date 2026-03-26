@@ -10,7 +10,7 @@ const Sidebar = ({
   return (
     <aside className="space-y-6 lg:sticky lg:top-6">
       <section className="rounded-lg bg-white p-7 shadow-xl">
-        <h3 className="text-base font-bold text-black">
+        <h3 className="text-lg text-black">
           Search
         </h3>
         <div className="mt-3 flex h-11 items-center rounded border border-[#e5e7eb] bg-[#f3f4f6] px-3">
@@ -29,7 +29,7 @@ const Sidebar = ({
       </section>
 
       <section className="rounded-lg bg-white p-7 shadow-lg">
-        <h3 className="text-base font-bold text-black">
+        <h3 className="text-lg text-black">
           Recent Posted
         </h3>
         <div className="mt-4 space-y-5">
@@ -60,7 +60,7 @@ const Sidebar = ({
       </section>
 
       <section className="rounded-lg bg-white p-7 shadow-lg">
-        <h3 className="text-base font-bold text-black">
+        <h3 className="text-lg text-black">
           Service Categories
         </h3>
         <ul className="mt-4">
@@ -80,7 +80,7 @@ const Sidebar = ({
       </section>
 
       <section className="rounded-lg bg-white p-7 shadow-lg">
-        <h3 className="text-base font-bold text-black">
+        <h3 className="text-lg text-black">
           Contact Us
         </h3>
         <form className="mt-4 space-y-3.5" onSubmit={(e) => e.preventDefault()}>

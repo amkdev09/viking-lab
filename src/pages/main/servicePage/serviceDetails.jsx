@@ -99,7 +99,7 @@ const ServiceDetails = () => {
   const [openFaq, setOpenFaq] = useState("permanent");
 
   return (
-    <main className="bg-white font-['Figtree',sans-serif] text-[#111827]">
+    <main className="bg-white text-[#111827]">
       <PageHero
         title="Direct Hire Solutions"
         breadcrumbs={[
@@ -111,15 +111,15 @@ const ServiceDetails = () => {
         ]}
       />
 
-      <section className="px-6 pb-16 pt-14 sm:pt-12">
+      <section className="px-6 pb-16 pt-24">
         <div className="container grid w-full max-w-[1312px] grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,360px)] lg:items-start lg:gap-x-12">
           {/* Main column */}
-          <article className="min-w-0 space-y-10 text-[#4b5563]">
+          <article className="min-w-0 space-y-10 text-[var(--primary-text-3)]">
             <header>
               <h2 className="text-4xl font-['Figtree-Bold'] leading-tight text-black">
                 HR Consulting &amp; Staffing
               </h2>
-              <p className="mt-5 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 Partner with experienced HR consultants who understand workforce
                 strategy, compliance, and talent acquisition. We align people
                 programs with business goals so you can scale confidently while
@@ -128,10 +128,10 @@ const ServiceDetails = () => {
             </header>
 
             <section>
-              <h3 className="text-xl font-bold text-black sm:text-2xl">
+              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 HR compliance and talent management
               </h3>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 From policy development to day-to-day HR operations, we help you
                 navigate regulations and build fair, consistent practices. Our
                 advisors support performance management, employee relations, and
@@ -140,16 +140,16 @@ const ServiceDetails = () => {
             </section>
 
             <section>
-              <h3 className="text-xl font-bold text-black sm:text-2xl">
+              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 Talent to drive your organization&apos;s success
               </h3>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 Great outcomes start with the right people in the right roles.
                 We combine market intelligence with rigorous assessment to
                 present candidates who match both the job description and your
                 culture.
               </p>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 Whether you are building a new team or replacing a key leader,
                 our staffing and search services shorten time-to-fill without
                 sacrificing quality.
@@ -157,15 +157,15 @@ const ServiceDetails = () => {
             </section>
 
             <section>
-              <h3 className="text-xl font-bold text-black sm:text-2xl">
+              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 Need to fill a position quickly
               </h3>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 When deadlines are tight, we activate curated talent pools and
                 proactive sourcing channels to surface qualified professionals
                 fast—without skipping vetting steps that protect your brand.
               </p>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 Share your must-haves and nice-to-haves; we prioritize speed on
                 the criteria that matter most while keeping stakeholders aligned
                 through weekly updates.
@@ -173,15 +173,15 @@ const ServiceDetails = () => {
             </section>
 
             <section>
-              <h3 className="text-xl font-bold text-black sm:text-2xl">
+              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 Need to fill a position quickly
               </h3>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 Rapid staffing does not mean rushed decisions. We use structured
                 scorecards and consistent interview guides so every hiring
                 manager evaluates candidates on the same bar.
               </p>
-              <p className="mt-4 text-sm leading-[1.7] sm:text-base">
+              <p className="mt-4 text-base">
                 For surge hiring or seasonal demand, we can blend temporary
                 support with a path to permanent placement when the role proves
                 long-term.
@@ -241,7 +241,7 @@ const ServiceDetails = () => {
                     >
                       <span
                         className={`text-sm font-semibold leading-snug sm:text-base ${
-                          isOpen ? "" : "text-black"
+                          isOpen ? "" : "text-[var(--primary-text-1)]"
                         }`}
                         style={
                           isOpen ? { color: "var(--primary-main)" } : undefined
@@ -266,14 +266,11 @@ const ServiceDetails = () => {
                     {isOpen && (
                       <div
                         className="border border-[#fdba8c] bg-white px-5 py-5 sm:px-6 sm:py-6"
-                        style={{ borderColor: "rgba(253, 150, 91, 0.55)" }}
+                        style={{ borderColor: "var(--primary-main)" }}
                       >
                         <div
-                          className="border-l-[3px] pl-4 text-sm sm:border-l-4 sm:pl-5 sm:text-base"
-                          style={{
-                            borderLeftColor: "var(--primary-main)",
-                            color: "var(--primary-main)",
-                          }}
+                          className="border-l-[3px] pl-4 text-base sm:border-l-4 sm:pl-5"
+                          style={{ borderLeftColor: "var(--primary-main)" }}
                         >
                           {item.answer}
                         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-import PageHero from "../../components/sections/pageHero";
+import PageHero from "../../../components/sections/pageHero";
 
 const projectCards = [
   "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80",

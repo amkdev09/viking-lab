@@ -5,10 +5,11 @@ import {
   FiChevronRight,
   FiSearch,
 } from "react-icons/fi";
-import PageHero from "../../components/sections/pageHero";
+import PageHero from "../../../components/sections/pageHero";
 import { CiUser } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { PiChatsCircle } from "react-icons/pi";
+import Sidebar from "../../../components/sections/sidebar";
 
 const recentPosts = [
   {
@@ -46,16 +47,19 @@ const blogItems = [
   },
 ];
 
+const categories = ["Startup", "Technology"];
+const tags = ["IT", "Solutions"];
+
 const BlogPage = () => {
   return (
-    <main className="bg-[#f3f3f3] font-['Inter'] text-[#111827]">
+    <main className="text-[#111827]">
       <PageHero
         title="Blog"
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Blog"]}
       />
 
-      <section className="px-6 pb-[46px] pt-[40px]">
-        <div className="container grid w-full grid-cols-1 gap-[24px] lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
+      <section className="px-6 pb-20 pt-24">
+        <div className="container grid w-full grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(210px,410px)] lg:gap-x-10">
           <div className="space-y-[18px]">
             {blogItems.map((post) => (
               <article
@@ -100,11 +104,11 @@ const BlogPage = () => {
                     </span>
                   </div>
 
-                  <h2 className="mt-[8px] max-w-[650px] font-['Poppins'] text-3xl leading-[1.18] font-semibold text-[#111827]">
+                  <h2 className="mt-[8px] max-w-[650px] text-3xl font-['Figtree-Bold'] leading-[1.18] text-[#111827]">
                     {post.title}
                   </h2>
 
-                  <p className="mt-[8px] max-w-[690px] text-base leading-[1.55] text-[#6b7280]">
+                  <p className="mt-[8px] mb-12  max-w-[690px] text-base leading-[1.55] text-[#6b7280]">
                     Welcome to our blog, where we share valuable insights, tips,
                     and industry news to empower both clients and candidates in
                     the world of staffing and recruitment. We believe that
@@ -113,10 +117,7 @@ const BlogPage = () => {
                     strategies to streamline your recruitment process or a
                   </p>
 
-                  <button
-                    type="button"
-                    className="mt-[10px] p-[28px] inline-flex h-[30px] items-center gap-[6px] bg-[var(--primary-main)] px-[10px] text-base font-semibold text-white"
-                  >
+                  <button type="button" className="theme-btn6">
                     Read More
                     <FiArrowRight aria-hidden="true" />
                   </button>
@@ -125,73 +126,21 @@ const BlogPage = () => {
             ))}
           </div>
 
-          <aside className="space-y-[12px]">
-            <section className="rounded-[4px] bg-[#f7f7f7] p-[28px] shadow-lg">
-              <h3 className="font-['Poppins'] text-base font-semibold text-[#111827]">
-                Search
-              </h3>
-              <div className="mt-[10px] flex h-[40px] items-center rounded-[4px] border border-[#e2e2e2] bg-[#f3f3f3] px-[10px]">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="h-full w-full bg-transparent text-base text-[#49505b] placeholder:text-[#9ca3af] focus:outline-none"
-                />
-                <FiSearch className="text-base text-[#f39f5a]" />
-              </div>
-            </section>
-
-            <section className="rounded-[4px] bg-[#f7f7f7] p-[28px] shadow-lg">
-              <h3 className="font-['Poppins'] text-base font-semibold text-[#111827]">
-                Recent Posts
-              </h3>
-              <div className="mt-[8px] space-y-[10px]">
-                {recentPosts.map((item) => (
-                  <article
-                    key={item.title}
-                    className="flex gap-[16px] border-b border-[#e6e6e6] pb-[16px] last:border-b-0 last:pb-0"
-                  >
-                    <figure className="h-[72px] w-[72px] shrink-0 object-cover rounded-[4px]">
-                      <img src={item.image} alt={item.title} className="h-full w-full object-cover rounded-[4px]" />
-                    </figure>
-                    <div>
-                      <h4 className="text-base leading-[1.35] font-medium text-[#111827]">
-                        {item.title}
-                      </h4>
-                      <p className="mt-[4px] text-base text-[#8a92a0]">
-                        {item.date}
-                      </p>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-
-            <section className="rounded-[4px] bg-[#f7f7f7] p-[28px] shadow-lg">
-              <h3 className="font-['Poppins'] text-base font-semibold text-[#111827]">
-                Category
-              </h3>
-              <ul className="mt-[8px] space-y-[8px]">
-                <li className="border-b border-[#e6e6e6] pb-[8px] text-base text-[#2e3440]">
-                  Startup
-                </li>
-                <li className="text-base text-[#2e3440]">Technology</li>
-              </ul>
-            </section>
-
-            <section className="rounded-[4px] bg-[#f7f7f7] p-[28px] shadow-lg">
-              <h3 className="font-['Poppins'] text-base font-semibold text-[#111827]">
-                Tags
-              </h3>
-              <div className="mt-[10px] flex flex-wrap gap-[8px]">
-                <span className="inline-flex h-[24px] items-center p-[12px] rounded-[4px] bg-[var(--vtc-bg-common-bg2)] text-base text-[#3d4653]">
-                  IT
-                </span>
-                <span className="inline-flex h-[24px] items-center p-[12px] rounded-[4px] bg-[var(--vtc-bg-common-bg2)] text-base text-[#3d4653]">
-                  Solutions
-                </span>
-              </div>
-            </section>
-          </aside>
+          <Sidebar
+            searchTitle="Search"
+            recentPosts={{
+              title: "Recent Posts",
+              items: recentPosts,
+            }}
+            categories={{
+              title: "Categories",
+              items: categories,
+            }}
+            tags={{
+              title: "Tags",
+              items: tags,
+            }}
+          />
         </div>
       </section>
     </main>

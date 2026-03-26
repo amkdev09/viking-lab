@@ -3,8 +3,6 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 import PageHero from "../../../components/sections/pageHero";
 import Sidebar from "../../../components/sections/sidebar";
 
-const accent = "var(--primary-main)";
-
 const recentPosted = [
   {
     title: "Executive Search Services",
@@ -112,7 +110,7 @@ const ServiceDetails = () => {
       />
 
       <section className="px-6 pb-16 pt-24">
-        <div className="container grid w-full max-w-[1312px] grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,360px)] lg:items-start lg:gap-x-12">
+        <div className="container grid w-full grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(210px,410px)] lg:gap-x-10">
           {/* Main column */}
           <article className="min-w-0 space-y-10 text-[var(--primary-text-3)]">
             <header>
@@ -128,7 +126,7 @@ const ServiceDetails = () => {
             </header>
 
             <section>
-              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
+              <h3 className="text-3xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 HR compliance and talent management
               </h3>
               <p className="mt-4 text-base">
@@ -140,7 +138,7 @@ const ServiceDetails = () => {
             </section>
 
             <section>
-              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
+              <h3 className="text-3xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 Talent to drive your organization&apos;s success
               </h3>
               <p className="mt-4 text-base">
@@ -157,7 +155,7 @@ const ServiceDetails = () => {
             </section>
 
             <section>
-              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
+              <h3 className="text-3xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 Need to fill a position quickly
               </h3>
               <p className="mt-4 text-base">
@@ -173,7 +171,7 @@ const ServiceDetails = () => {
             </section>
 
             <section>
-              <h3 className="text-4xl font-['Figtree-Bold'] text-black sm:text-2xl">
+              <h3 className="text-3xl font-['Figtree-Bold'] text-black sm:text-2xl">
                 Need to fill a position quickly
               </h3>
               <p className="mt-4 text-base">
@@ -216,7 +214,7 @@ const ServiceDetails = () => {
                     <li key={item} className="flex gap-3 leading-snug">
                       <span
                         className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full"
-                        style={{ backgroundColor: accent }}
+                        style={{ backgroundColor: "var(--primary-main)" }}
                         aria-hidden
                       />
                       <span>{item}</span>
@@ -283,9 +281,16 @@ const ServiceDetails = () => {
           </article>
 
           <Sidebar
-            recentPosted={recentPosted}
-            serviceCategories={serviceCategories}
-            accent={accent}
+            searchTitle="Search"
+            recentWorks={{
+              title: "Recent Works",
+              items: recentPosted,
+            }}
+            categories={{
+              title: "Categories",
+              items: serviceCategories,
+            }}
+            contactUs={true}
           />
         </div>
       </section>

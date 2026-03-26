@@ -14,7 +14,7 @@ import {
   RiTeamLine,
   RiMedalLine,
 } from "react-icons/ri";
-import SectionHeader from "../components/sections/header";
+import SectionHeader from "../../components/sections/header";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
 const LandingPage = () => {
@@ -38,19 +38,19 @@ const LandingPage = () => {
 
   return (
     <main className="bg-[#ffffff] text-[#1b2a28]">
-      <section className="relative vikin-hero">
-        <div className="container">
-          <main className="flex flex-col md:flex-row items-start gap-6 md:gap-0.5">
-            <div className="w-full md:w-1/2 pt-[56px] sm:pt-[72px] md:pt-[80px]">
+      <section className="relative vikin-hero pt-[max(5.25rem,env(safe-area-inset-top,0px)+3.75rem)] sm:pt-[4.5rem] md:pt-[5rem] lg:pt-[4.25rem] xl:pt-[5rem]">
+        <div className="container w-full">
+          <div className="flex w-full flex-col items-stretch gap-8 md:flex-row md:items-start md:gap-6 lg:gap-8 xl:gap-10">
+            <div className="w-full min-w-0 md:max-w-[50%] md:flex-1 lg:pt-2">
               <span className="inline-flex rounded bg-white/15 px-[0.635rem] py-[0.285rem] text-base text-white tracking-[0.01em]">
                 Staffing Power Your Success
               </span>
 
-              <h1 className="mt-[1.1rem] text-4xl sm:text-5xl md:text-6xl text-white font-bold">
+              <h1 className="mt-[1.1rem] text-balance text-3xl font-bold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1] md:text-5xl md:leading-tight lg:text-6xl">
                 Growth Exceptional Talent Lets Build Success Together
               </h1>
 
-              <p className="mt-[1.15rem] text-base leading-[1.65] text-[var(--primary-text-2)]">
+              <p className="mt-[1.15rem] max-w-xl text-base leading-[1.65] text-[var(--primary-text-2)]">
                 Our tailored staffing solutions streamline the hiring process
                 saving you time and resources while ensuring the perfect fit.
               </p>
@@ -70,45 +70,47 @@ const LandingPage = () => {
                 <p className="text-lg font-bold text-white">
                   Trusted By 5,789 Users
                 </p>
-                <p className="flex mt-[0.38rem] text-white/90">
-                  <span className="flex gap-[6px] items-center text-[var(--color-yellow)] text-base">
+                <p className="mt-[0.38rem] flex flex-wrap items-center gap-x-2 gap-y-1 text-white/90">
+                  <span className="flex shrink-0 items-center gap-[6px] text-[var(--color-yellow)]">
                     <FaStar className="text-lg" />
                     <FaStar className="text-lg" />
                     <FaStar className="text-lg" />
                     <FaStar className="text-lg" />
                     <FaStar className="text-lg text-[#d7dfdc]" />
                   </span>
-                  <span className="block ml-1 text-lg">4K Happy Client</span>
+                  <span className="text-base sm:text-lg">4K Happy Client</span>
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/2 mt-[56px] sm:mt-[72px] md:mt-[80px] self-stretch flex-1">
-              <div className="grid md:grid-cols-[60%_40%] gap-0.5 w-full h-full">
-                {/* LEFT IMAGE (drives height) */}
-                <article className="relative self-stretch">
-                  <figure className="h-full w-full">
+
+            <div className="w-full min-w-0 md:max-w-[50%] md:flex-1">
+              <div className="grid w-full grid-cols-1 gap-4 sm:gap-6 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-stretch md:gap-6 lg:gap-8">
+                <article className="relative w-full overflow-hidden rounded-lg aspect-[3/4] sm:aspect-[4/5] md:aspect-auto md:min-h-[280px] lg:min-h-[320px]">
+                  <figure className="absolute inset-0 h-full w-full md:relative">
                     <img
                       src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img1.png"
+                      alt=""
                       className="h-full w-full object-cover"
                     />
                   </figure>
                 </article>
 
-                {/* RIGHT SIDE */}
-                <div className="flex flex-col gap-0.5 w-full self-stretch">
-                  <article className="relative overflow-hidden flex-[3]">
-                    <figure className="h-full w-full">
+                <div className="flex w-full min-h-0 flex-col gap-4 sm:gap-6 md:gap-8">
+                  <article className="relative w-full overflow-hidden rounded-lg aspect-[16/10] sm:aspect-[5/3] md:aspect-auto md:min-h-0 md:flex-[3] md:min-h-[140px] lg:min-h-[180px]">
+                    <figure className="absolute inset-0 h-full w-full md:relative md:h-full">
                       <img
                         src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img2.png"
+                        alt=""
                         className="h-full w-full object-cover"
                       />
                     </figure>
                   </article>
 
-                  <article className="relative overflow-hidden flex-[2]">
-                    <figure className="h-full w-full">
+                  <article className="relative w-full overflow-hidden rounded-lg aspect-[16/10] sm:aspect-[5/3] md:aspect-auto md:min-h-0 md:flex-[2] md:min-h-[120px] lg:min-h-[160px]">
+                    <figure className="absolute inset-0 h-full w-full md:relative md:h-full">
                       <img
                         src="https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/hero3-img3.png"
+                        alt=""
                         className="h-full w-full object-cover"
                       />
                     </figure>
@@ -122,7 +124,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-          </main>
+          </div>
         </div>
       </section>
 
@@ -349,7 +351,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="mt-7 flex">
+          <div className="mt-7 grid grid-cols-1 gap-10 sm:gap-12 md:mt-10 md:grid-cols-3 md:gap-6 lg:gap-8">
             {[
               {
                 title: "Employee On-Boarding Checklist",
@@ -364,32 +366,38 @@ const LandingPage = () => {
                 body: "With our proven track record and commitment to excellence, we re here support your",
               },
             ].map((item, index) => (
-              <article key={`${item.title}-${index}`}>
-                <div className="flex items-center ">
-                  <span className="relative text-sm inline-flex h-[44px] w-[44px] items-center justify-center text-white">
+              <article
+                key={`${item.title}-${index}`}
+                className="min-w-0 md:border-l md:border-white/15 md:pl-6 lg:pl-8 first:md:border-l-0 first:md:pl-0"
+              >
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="relative inline-flex h-10 w-14 shrink-0 items-center justify-center text-white sm:h-11 sm:w-[3.5rem]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="56"
-                      height="40"
+                      className="h-10 w-14 sm:h-11 sm:w-[3.5rem]"
                       viewBox="0 0 56 40"
                       fill="none"
+                      aria-hidden
                     >
                       <path
                         d="M0 4C0 1.79086 1.79086 0 4 0H33.7195C34.7204 0 35.6849 0.375212 36.4226 1.05157L52.9411 16.1956C54.612 17.7275 54.6773 20.3403 53.085 21.9537L36.4503 38.8097C35.6987 39.5713 34.6733 40 33.6032 40H4C1.79086 40 0 38.2091 0 36V4Z"
                         fill="#FD965B"
-                      ></path>
+                      />
                     </svg>
-                    <span className="absolute top-1/2 left-[16px] -translate-x-1/2 -translate-y-1/2 text-base leading-[1.2] font-semibold text-white">
+                    <span className="absolute left-[1.05rem] top-1/2 -translate-y-1/2 text-sm font-semibold leading-[1.2] text-white sm:left-[1.1rem] sm:text-base">
                       {index + 1}
                     </span>
                   </span>
-                  <span className="h-[1px] w-full bg-[#fff]" />
+                  <span
+                    className="h-px min-h-[1px] flex-1 bg-white/35 md:hidden"
+                    aria-hidden
+                  />
                 </div>
-                <div className="pr-12">
-                  <h3 className="mt-3 text-lg font-bold leading-[1.2] text-white hover:text-[#fd965b]">
+                <div className="mt-3 pr-0 sm:pr-4 md:mt-4 md:pr-0">
+                  <h3 className="text-lg font-bold leading-snug text-white transition-colors hover:text-[#fd965b] sm:text-xl">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-base leading-[1.52] text-white">
+                  <p className="mt-2 text-sm leading-[1.52] text-white/95 sm:text-base">
                     {item.body}
                   </p>
                 </div>

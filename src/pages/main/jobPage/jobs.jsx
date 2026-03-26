@@ -1,6 +1,6 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-import PageHero from "../../components/sections/pageHero";
+import PageHero from "../../../components/sections/pageHero";
 
 const jobs = [
   {
@@ -55,7 +55,7 @@ const jobs = [
 
 const JobsPage = () => {
   return (
-    <main className="font-['Inter'] text-[#111827]">
+    <main className="text-[#111827]">
       <PageHero
         title="Job Posts"
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Job Posts"]}
@@ -68,11 +68,11 @@ const JobsPage = () => {
               key={`${job.company}-${job.role}`}
               className="rounded-[8px] border border-[#d8d8d8] px-[16px] pt-[16px] pb-[12px]"
             >
-              <span className="inline-flex h-[32px] items-center rounded-[4px] bg-[var(--vtc-bg-common-bg1)] px-[10px] text-base font-medium text-[#3d3d3d]">
+              <span className="inline-flex h-[32px] items-center rounded-[4px] bg-[var(--primary-text-bg-1)] px-[10px] text-base text-[#3d3d3d] font-['Figtree-Regular']">
                 {job.type}
               </span>
 
-              <p className="mt-[16px] font-['Poppins'] text-base leading-[1.1] font-semibold text-[#111827]">
+              <p className="mt-[16px] text-base text-[#111827]">
                 {job.company}
               </p>
               <p className="mt-[4px] text-base leading-[1.2] text-[#6b7280]">
@@ -81,17 +81,17 @@ const JobsPage = () => {
 
               <div className="mt-[16px] h-px w-full bg-[#d4d4d4]" />
 
-              <p className="mt-[15px] font-['Poppins'] text-base leading-[1.12] font-semibold text-[#111827]">
+              <p className="mt-[15px] text-base text-[#111827]">
                 {job.role}
               </p>
-              <p className="mt-[6px] font-['Poppins'] text-base leading-none font-medium text-[#f3a164]">
+              <p className="mt-[6px] text-base text-[#f3a164]">
                 {job.salary}
               </p>
               <p className="mt-[18px] text-base text-[#6e7581]">{job.posted}</p>
 
               <button
                 type="button"
-                className="mt-[12px] inline-flex h-[42px] min-w-[126px] items-center justify-center gap-[6px] rounded-[4px] border border-[#d7b795] bg-[#f8f3ec] px-[15px] font-['Poppins'] text-base font-medium text-[#0f172a]"
+                className="mt-[12px] inline-flex h-[42px] min-w-[126px] items-center justify-center gap-[6px] rounded-[4px] border border-[#d7b795] bg-[#f8f3ec] px-[15px] text-base text-[#0f172a]"
               >
                 Job Details
                 <FiArrowUpRight aria-hidden="true" className="text-base" />

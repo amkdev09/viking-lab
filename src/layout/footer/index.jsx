@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="container">
           <section className="site-footer__newsletter flex h-[444px]">
             <div className="w-1/2 h-full">
-              <figure className="site-footer__newsletter-image h-full">
+              <figure className="site-footer__newsletter-image">
                 <img
                   src="	https://recrute.vikinglab.agency/staffing-agency/wp-content/uploads/sites/3/2025/11/2147650999.png"
                   alt="Newsletter woman"
@@ -37,7 +37,7 @@ const Footer = () => {
                   placeholder="Email Address"
                   aria-label="Email Address"
                 />
-                <button type="submit">
+                <button className="theme-btn6" type="submit">
                   <span>Subscribe Now</span>
                   <FiArrowUpRight aria-hidden="true" />
                 </button>

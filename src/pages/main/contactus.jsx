@@ -1,7 +1,7 @@
 import React from "react";
 import PageHero from "../../components/sections/pageHero";
-import SectionHeader from "../../components/sections/header";
 import { FiArrowUpRight } from "react-icons/fi";
+import SectionHeader from "../../components/sections/header";
 
 const contactItems = [
   {
@@ -51,35 +51,35 @@ const contactItems = [
 
 const ContactUs = () => {
   return (
-    <main className="font-['Inter'] text-[#1f2937]">
+    <main className="text-[#1f2937]">
       <PageHero
         title="Contact"
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Contact"]}
       />
 
-      <section className="px-6 pb-[34px] pt-[32px]">
-        <div className="container">
-          <div className="flex w-full flex-col gap-[24px] lg:items-start lg:flex-row lg:gap-[24px]">
-            <div className="pt-[28px] w-full lg:w-1/2">
+      <section className="py-25">
+        <div className="container mx-auto max-w-[1200px]">
+          <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-start lg:gap-12 xl:gap-16">
+            <div className="w-full lg:w-[46%] lg:min-w-0 lg:flex-1">
               <SectionHeader
                 type="Contact Us"
-                title="Get in Touch Lets Start the Conversation"
+                title="Get in Touch Let's Start the Conversation"
                 description="We are here to help you find the right staffing solutions for your needs. Whether you are a company looking to hire top talent or a candidate seeking your next career opportunity"
                 textAlign="start"
               />
 
-              <div className="mt-[12px] h-px w-full bg-[#d8d8d8]" />
+              <div className="mt-8 h-px w-full bg-[#e5e7eb]" />
 
-              <div className="mt-[14px] flex w-full gap-[16px]">
+              <div className="mt-8 flex w-full flex-col gap-8 sm:flex-row sm:gap-6">
                 {contactItems.map((item) => (
-                  <div key={item.label} className="w-1/2">
-                    <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[var(--vtc-bg-common-bg1)] text-[var(--primary-main)]">
+                  <div key={item.label} className="min-w-0 flex-1">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--primary-text-bg-1)] text-[var(--primary-main)]">
                       {item.icon}
                     </div>
-                    <p className="mt-[7px] text-base leading-[1.4] text-[#636b75]">
+                    <p className="mt-3 text-sm font-medium leading-snug text-[#6b7280] md:text-base">
                       {item.label}
                     </p>
-                    <p className="mt-[2px] font-['Poppins'] text-base leading-[1.25] font-semibold text-[#111827]">
+                    <p className="mt-1 text-lg font-['Figtree-Bold'] leading-tight text-[#111827] md:text-xl">
                       {item.value}
                     </p>
                   </div>
@@ -87,62 +87,75 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2">
-              <div className="bg-[var(--vtc-bg-common-bg2)] px-[16px] pt-[14px] pb-[12px]">
-                <h3 className="font-['Poppins'] text-3xl leading-[1.15] font-semibold tracking-[-0.01em] text-[#111827]">
+            <div className="w-full lg:w-[54%] lg:min-w-0 lg:flex-1">
+              <div className="rounded-4 bg-[#f3f4f6] p-6 shadow-sm sm:p-8 md:p-9">
+                <h3 className="text-2xl font-['Figtree-Bold'] leading-tight tracking-[-0.02em] text-[#0f172a] md:text-3xl">
                   Send us a Message
                 </h3>
-                <p className="mt-[7px] text-base leading-[1.65] text-[#6a7079]">
+                <p className="mt-3 text-base leading-[1.65] text-[#6b7280]">
                   Feel free to reach out to us with any questions, inquiries, or
                   staffing requirements you may have. Our experienced
                 </p>
 
-                <form className="mt-[10px] space-y-[8px]">
-                  <div className="grid grid-cols-1 gap-[8px] sm:grid-cols-2">
+                <form
+                  className="mt-6 space-y-3.5"
+                  onSubmit={(e) => e.preventDefault()}
+                >
+                  <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2">
                     <input
                       type="text"
+                      name="firstName"
                       placeholder="First Name"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-14 font-['Figtree-Regular'] w-full bg-[#e5e7eb] px-3.5 text-base text-[#374151] placeholder:text-[#9ca3af] transition-colors focus:border-[var(--primary-main)] focus:outline-none"
                     />
                     <input
                       type="text"
+                      name="lastName"
                       placeholder="Last Name"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-14 font-['Figtree-Regular'] w-full bg-[#e5e7eb] px-3.5 text-base text-[#374151] placeholder:text-[#9ca3af] transition-colors focus:border-[var(--primary-main)] focus:outline-none"
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 gap-[8px] sm:grid-cols-2">
+                  <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2">
                     <input
                       type="email"
+                      name="email"
                       placeholder="Email"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-14 font-['Figtree-Regular'] w-full bg-[#e5e7eb] px-3.5 text-base text-[#374151] placeholder:text-[#9ca3af] transition-colors focus:border-[var(--primary-main)] focus:outline-none"
                     />
                     <input
-                      type="text"
+                      type="tel"
+                      name="phone"
                       placeholder="Phone Number"
-                      className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                      className="h-14 font-['Figtree-Regular'] w-full bg-[#e5e7eb] px-3.5 text-base text-[#374151] placeholder:text-[#9ca3af] transition-colors focus:border-[var(--primary-main)] focus:outline-none"
                     />
                   </div>
 
                   <input
                     type="text"
+                    name="subject"
                     placeholder="Subject"
-                    className="h-[36px] w-full bg-[#E9E8E9] px-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    className="h-14 font-['Figtree-Regular'] w-full bg-[#e5e7eb] px-3.5 text-base text-[#374151] placeholder:text-[#9ca3af] transition-colors focus:border-[var(--primary-main)] focus:outline-none"
                   />
 
                   <textarea
+                    name="message"
                     placeholder="Your Message"
-                    rows={3}
-                    className="h-[74px] w-full resize-none bg-[#E9E8E9] px-[10px] py-[10px] text-base text-[#555] placeholder:text-[#6b6b6b] focus:outline-none"
+                    rows={5}
+                    className="min-h-[140px] w-full resize-y font-['Figtree-Regular'] bg-[#e5e7eb] px-3.5 py-3 text-base text-[#374151] placeholder:text-[#9ca3af] transition-colors focus:border-[var(--primary-main)] focus:outline-none"
                   />
 
-                  <div className="flex justify-end pt-[4px]">
+                  <div className="flex justify-end pt-1">
                     <button
-                      type="button"
-                      className="inline-flex h-[30px] min-w-[92px] items-center justify-center gap-0.5 bg-[var(--primary-main)] px-[12px] font-['Poppins'] text-base font-medium text-white transition-colors duration-150 hover:bg-[#e59753]"
+                      type="submit"
+                      className="theme-btn6"
                     >
                       Submit Now
-                      <FiArrowUpRight aria-hidden="true" />
+                      <FiArrowUpRight
+                        className="h-4 w-4 shrink-0"
+                        strokeWidth={2.5}
+                        aria-hidden
+                      />
                     </button>
                   </div>
                 </form>

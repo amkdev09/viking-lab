@@ -91,7 +91,7 @@ const BlogGrid = () => {
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Blog Grid"]}
       />
 
-      <section className="px-6 pb-20 pt-16 md:pb-24 md:pt-20">
+      <section className="pt-[100px]">
         <div className="container mx-auto w-full max-w-[1280px]">
           <ul className="grid list-none grid-cols-1 gap-7 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:gap-8">
             {gridPosts.map((post) => (

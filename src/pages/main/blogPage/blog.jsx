@@ -58,7 +58,7 @@ const BlogPage = () => {
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Blog"]}
       />
 
-      <section className="px-6 pb-20 pt-24">
+      <section className="pt-[100px]">
         <div className="container grid w-full grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(210px,410px)] lg:gap-x-10">
           <div className="space-y-[18px]">
             {blogItems.map((post) => (

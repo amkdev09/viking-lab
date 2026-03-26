@@ -21,7 +21,7 @@ const ProjectsPage = () => {
         title="Our Projects"
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Our Projects"]}
       />
-      <section className="px-6 pb-[60px] pt-[46px]">
+      <section className="pt-[100px]">
         <div className="container grid w-full grid-cols-1 gap-[14px] sm:grid-cols-2 lg:grid-cols-3">
           {projectCards.map((image, index) => (
             <article

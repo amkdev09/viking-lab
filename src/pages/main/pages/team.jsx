@@ -27,7 +27,7 @@ const Team = () => {
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Team"]}
       />
 
-      <section className="px-6 py-16 md:py-20">
+      <section className="pt-[100px]">
         <div className="container mx-auto w-full max-w-[1280px]">
           <ul className="grid list-none grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {teamPhotos.map((src, index) => (

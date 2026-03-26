@@ -61,7 +61,7 @@ const JobsPage = () => {
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Job Posts"]}
       />
 
-      <section className="pt-[100px]">
+       <section className="pt-[100px]">
         <div className="container grid w-full grid-cols-1 gap-[24px] md:grid-cols-2 xl:grid-cols-3">
           {jobs.map((job) => (
             <article

@@ -53,9 +53,9 @@ const JobDetails = () => {
         ]}
       />
 
-      <section className="px-6 pb-20 pt-34">
+      <section className="md:px-6 px-1 pb-10 md:pb-20 pt-20 md:pt-34">
         <div className="container w-full">
-          <article className="min-w-0 space-y-10 w-[70%] mx-auto">
+          <article className="min-w-0 space-y-10 w-full md:w-[70%] mx-auto md:mx-0">
             <section>
               <h2 className="text-4xl font-['Figtree-Bold'] leading-tight text-black">
                 Job Description

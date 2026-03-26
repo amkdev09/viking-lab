@@ -13,7 +13,7 @@ const AboutUs = () => {
         breadcrumbs={["Recrute Sites", "Staffing Agency", "About Us"]}
       />
 
-      <section className="pt-[56px] pb-[56px] sm:pt-[70px] sm:pb-[70px] md:pt-[80px] md:pb-[80px]">
+      <section className="pt-[100px]">
         <div className="container">
           <main className="flex flex-col md:flex-row gap-8">
             <div className="flex w-full md:w-1/2 gap-8 flex-col sm:flex-row">

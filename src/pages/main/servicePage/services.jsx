@@ -21,7 +21,7 @@ const ServicesPage = () => {
         breadcrumbs={["Recrute Sites", "Staffing Agency", "Our Services"]}
       />
 
-      <section className="px-6 pt-[100px]">
+      <section className="pt-[100px]">
         <div className="container">
           <div className="grid w-full grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-3">
             {serviceImages.map((image, index) => (
